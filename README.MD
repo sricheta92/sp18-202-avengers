@@ -1,13 +1,9 @@
-<b> Welcome to Avengers </b> 
+# Welcome to Avengers 
 
-Team members: 
+## Team members: 
 
-Huy Vo 
-
-Kalikalyan Dash
- 
-Mangesh Tak
- 
-Prateek Sharma
-
-Sricheta Ruj 
+* Huy Vo
+* Sricheta Ruj
+* Kalikalyan Dash
+* Mangesh Tak
+* Prateek Sharma
