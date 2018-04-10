@@ -34,3 +34,13 @@ Idea is to design adventure based game.
 
 blocker:
 No blocker
+
+
+
+# Day 2 - 8th April
+
+#### Sricheta
+* What I did yesterday - I discussed car racing game idea with my teammates. We discussed pros and cons of each game and visualized the game with various design patterns.
+We finally came into the conclusion with a game titled - Avengers. We defined the scope of the project.
+* What I will do today - I researched about the technolgies that could be feasible with our scope. I thought of Java.
+* Blocker : finalizing the technology ia a blocker now.
