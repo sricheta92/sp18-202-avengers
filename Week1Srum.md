@@ -44,3 +44,8 @@ No blocker
 We finally came into the conclusion with a game titled - Avengers. We defined the scope of the project.
 * What I will do today - I researched about the technolgies that could be feasible with our scope. I thought of Java.
 * Blocker : finalizing the technology ia a blocker now.
+
+#### Mangesh
+* What I did yesterday - Discussed my game idea with team. Had conversation discussing pros and cons of game idea. We finalise one game idea 'Avengers' adventure based game.
+* What I will do today - Researched about the platform available to build the game. I came up with the Greenfoot. Discussed the pros and cons of suggested technology with team.
+* Blocker - Team had different views about different game building platforms. After discussing all platforms, team finalised JavaScript
