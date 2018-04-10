@@ -49,3 +49,14 @@ We finally came into the conclusion with a game titled - Avengers. We defined th
 * What I did yesterday - Discussed my game idea with team. Had conversation discussing pros and cons of game idea. We finalise one game idea 'Avengers' adventure based game.
 * What I will do today - Researched about the platform available to build the game. I came up with the Greenfoot. Discussed the pros and cons of suggested technology with team.
 * Blocker - Team had different views about different game building platforms. After discussing all platforms, team finalised JavaScript
+
+#### Prateek
+* What I did yesterday? 
+I discussed about my game idea and also got an opporiunity to listen to the other game ideas. We finalised to make an adventure game called 'Avengers'. 
+
+
+* What will I do today? 
+To come up with the details of the game, its states, platform and the technology we will use. 
+
+* Any roadblacks? 
+Game platform decision is on hold, more research is required. 
