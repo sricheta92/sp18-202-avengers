@@ -21,3 +21,16 @@ Discuss about the game ideas other team mates have come up with, and finalize th
 
 * Any roadblacks? 
 None, as of now.
+
+
+#### Kalikalyan
+yesterday:
+came up with wrestling game idea
+Two bots will be fighting each other
+
+today:
+Discussed all team members game ideas and finalized the game
+Idea is to design adventure based game.
+
+blocker:
+No blocker
