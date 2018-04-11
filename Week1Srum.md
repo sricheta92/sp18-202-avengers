@@ -84,4 +84,9 @@ Start prototyping a bit and learning Javascript on my own time.
 * Any roadblacks? 
 No. 
 
+# Day 3 - 9th April
 
+#### Sricheta
+* What I did yesterday - I read about Observer and Abstract Design pattern.
+* What I will do today - Today I will work on my assisgned story =" "
+* Blocker : Nothing.
