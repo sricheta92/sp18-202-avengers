@@ -71,3 +71,17 @@ Details of the game and technology to be used.
 
 * Any roadblacks? 
 More research required in the above mentioned issues.
+
+#### Huy 
+
+* What I did yesterday? 
+Research how a 2d platformer would work. 
+
+
+* What will I do today? 
+Start prototyping a bit and learning Javascript on my own time. 
+
+* Any roadblacks? 
+No. 
+
+
