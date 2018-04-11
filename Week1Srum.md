@@ -90,3 +90,9 @@ No.
 * What I did yesterday - I read about Observer and Abstract Design pattern.
 * What I will do today - Today I will work on my assigned story =" "
 * Blocker : Nothing.
+
+#### Huy
+
+* What I did yesterday - Read about 2d platformers 
+* What I will do today - Coded 2d collision
+* Blocker : Code not working correctly. Will fix today with teammates.
