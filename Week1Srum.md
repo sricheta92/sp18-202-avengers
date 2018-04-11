@@ -60,3 +60,14 @@ To come up with the details of the game, its states, platform and the technology
 
 * Any roadblacks? 
 Game platform decision is on hold, more research is required. 
+
+#### Kalikalyan
+* What I did yesterday? 
+The game idea I came up with was discussed and all the other ideas were taken into consideration.
+
+
+* What will I do today? 
+Details of the game and technology to be used.
+
+* Any roadblacks? 
+More research required in the above mentioned issues.
