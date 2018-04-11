@@ -88,5 +88,5 @@ No.
 
 #### Sricheta
 * What I did yesterday - I read about Observer and Abstract Design pattern.
-* What I will do today - Today I will work on my assisgned story =" "
+* What I will do today - Today I will work on my assigned story =" "
 * Blocker : Nothing.
