@@ -110,4 +110,8 @@ No.
 * Blocker - We will start working asap.
 
 
+#### Mangesh
+* What I did yesterday - Researched about JAVA gaming platform.
+* What I will do today - Design the structure of game, deciding which design patterns we will use.
+* Blocker : Need to start implementation.
 
