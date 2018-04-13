@@ -121,3 +121,9 @@ No.
 * What I did yesterday - I worked on building the architecture of game. I modeled the architecture.
 * What I will do today - Today I will work sprint planning and I will assign stories to everyone. 
 * Blocker - Assigning stories
+
+#### Huy
+
+* What I did yesterday - Getting use to framework 
+* What I will do today - Trying to add design patterns to project
+* Blocker - Nothing
