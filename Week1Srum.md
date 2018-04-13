@@ -101,3 +101,13 @@ No.
 * What I did yesterday - Researched about corona gaming platform and unity gaming platform.
 * What I will do today - Start working on building the structure of the game after deciding with the team.
 * Blocker : Have to start the implementation as soon as we can. 
+
+
+
+#### Kalikalyan 
+* What I did yesterday - I read about decorator and factory Design pattern..
+* What I will do today - Start working on building the structure of the game after deciding with the team.
+* Blocker - We will start working asap.
+
+
+
