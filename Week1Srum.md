@@ -24,15 +24,15 @@ None, as of now.
 
 
 #### Kalikalyan
-yesterday:
+* yesterday:
 came up with wrestling game idea
 Two bots will be fighting each other
 
-today:
+* today:
 Discussed all team members game ideas and finalized the game
 Idea is to design adventure based game.
 
-blocker:
+* blocker:
 No blocker
 
 
