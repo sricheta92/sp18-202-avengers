@@ -96,3 +96,8 @@ No.
 * What I did yesterday - Read about 2d platformers 
 * What I will do today - Coded 2d collision
 * Blocker : Code not working correctly. Will fix today with teammates.
+
+#### Prateek 
+* What I did yesterday - Researched about corona gaming platform and unity gaming platform.
+* What I will do today - Start working on building the structure of the game after deciding with the team.
+* Blocker : Have to start the implementation as soon as we can. 
