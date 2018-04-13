@@ -43,7 +43,7 @@ No blocker
 * What I did yesterday - I discussed car racing game idea with my teammates. We discussed pros and cons of each game and visualized the game with various design patterns.
 We finally came into the conclusion with a game titled - Avengers. We defined the scope of the project.
 * What I will do today - I researched about the technolgies that could be feasible with our scope. I thought of Java.
-* Blocker : finalizing the technology ia a blocker now.
+* Blocker - finalizing the technology ia a blocker now.
 
 #### Mangesh
 * What I did yesterday - Discussed my game idea with team. Had conversation discussing pros and cons of game idea. We finalise one game idea 'Avengers' adventure based game.
@@ -89,18 +89,18 @@ No.
 #### Sricheta
 * What I did yesterday - I read about Observer and Abstract Design pattern.
 * What I will do today - Today I will work on architecture of game.
-* Blocker : Nothing.
+* Blocker - Nothing.
 
 #### Huy
 
 * What I did yesterday - Read about 2d platformers 
 * What I will do today - Coded 2d collision
-* Blocker : Code not working correctly. Will fix today with teammates.
+* Blocker - Code not working correctly. Will fix today with teammates.
 
 #### Prateek 
 * What I did yesterday - Researched about corona gaming platform and unity gaming platform.
 * What I will do today - Start working on building the structure of the game after deciding with the team.
-* Blocker : Have to start the implementation as soon as we can. 
+* Blocker - Have to start the implementation as soon as we can. 
 
 
 
@@ -113,11 +113,11 @@ No.
 #### Mangesh
 * What I did yesterday - Researched about JAVA gaming platform.
 * What I will do today - Design the structure of game, deciding which design patterns we will use.
-* Blocker : Need to start implementation.
+* Blocker - Need to start implementation.
 
 # Day 4 - 10th April
 
 #### Sricheta
 * What I did yesterday - I worked on building the architecture of game. I modeled the architecture.
 * What I will do today - Today I will work sprint planning and I will assign stories to everyone. 
-* Blocker : Assigning stories
+* Blocker - Assigning stories
