@@ -88,7 +88,7 @@ No.
 
 #### Sricheta
 * What I did yesterday - I read about Observer and Abstract Design pattern.
-* What I will do today - Today I will work on my assigned story =" "
+* What I will do today - Today I will work on architecture of game.
 * Blocker : Nothing.
 
 #### Huy
@@ -115,3 +115,9 @@ No.
 * What I will do today - Design the structure of game, deciding which design patterns we will use.
 * Blocker : Need to start implementation.
 
+# Day 4 - 10th April
+
+#### Sricheta
+* What I did yesterday - I worked on building the architecture of game. I modeled the architecture.
+* What I will do today - Today I will work sprint planning and I will assign stories to everyone. 
+* Blocker : Assigning stories
