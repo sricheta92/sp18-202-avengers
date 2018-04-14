@@ -35,6 +35,11 @@ Idea is to design adventure based game.
 * blocker:
 No blocker
 
+#### Huy
+
+* What I did yesterday - Nothing  
+* What I will do today - Talk to teammates in planning
+* Blocker - Nothing
 
 
 # Day 2 - 8th April
