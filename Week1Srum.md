@@ -127,3 +127,8 @@ No.
 * What I did yesterday - Getting use to framework 
 * What I will do today - Trying to add design patterns to project
 * Blocker - Nothing
+
+#### Mangesh
+* What I did yesterday - I understood the architecture of game and discussed with team.
+* What I will do today - Today I will work on story assigned to me. 
+* Blocker - Nothing
