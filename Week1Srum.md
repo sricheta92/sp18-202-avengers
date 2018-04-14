@@ -132,3 +132,8 @@ No.
 * What I did yesterday - I understood the architecture of game and discussed with team.
 * What I will do today - Today I will work on story assigned to me. 
 * Blocker - Nothing
+
+##### Prateek 
+* What I did yesterday - Started building the code structure. 
+* What I will do today - Working on commiting code from today 
+* Blocker - No blockers for now
