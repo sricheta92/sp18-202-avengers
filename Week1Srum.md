@@ -147,3 +147,10 @@ No.
 * What I did yesterday - Built the code structure
 * What I will do today - Working on commiting code
 * Blocker - No blockers for now
+
+# Day 5 - 11th April
+
+#### Mangesh
+* What I did yesterday - I worked on architecture design of game.
+* What I will do today - I will startimplementation of game. 
+* Blocker - No blocker as of now.
