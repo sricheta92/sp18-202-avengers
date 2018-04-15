@@ -159,3 +159,8 @@ No.
 * What I did yesterday - Building the initial setup and configuration files. 
 * What I will do today - Handover the basic setup to the team
 * Blocker - Could not commit code because I was stuck with setting up the base of the project
+
+#### Huy 
+* What I did yesterday - I worked on the architectural design of the game.
+* What I will do today - Apply design pattern. Write unit test cases.  
+* Blocker - No blocker as of now.
