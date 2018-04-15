@@ -152,5 +152,10 @@ No.
 
 #### Mangesh
 * What I did yesterday - I worked on architecture design of game.
-* What I will do today - I will startimplementation of game. 
+* What I will do today - I will start implementation of game. 
 * Blocker - No blocker as of now.
+
+#### Prateek 
+* What I did yesterday - Building the initial setup and configuration files. 
+* What I will do today - Handover the basic setup to the team
+* Blocker - Could not commit code because I was stuck with setting up the base of the project
