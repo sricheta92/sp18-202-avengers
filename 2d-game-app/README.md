@@ -1,5 +1,4 @@
 
-** Application uses nodemon for test development **
-** To run in test development type: **
+# Application uses nodemon for test development
 
-`npm run test`
+To start application in test mode: `npm run test`
