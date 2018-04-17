@@ -177,3 +177,7 @@ No.
 * What I will do today - Researching about the implementation of the design pattern
 * Blocker - No blocker as of now.
 
+#### Sricheta 
+* What I did yesterday - Code over the basic setup of the code.
+* What I will do today - Read about Phaser JS.
+* Blocker - No blocker as of now.
