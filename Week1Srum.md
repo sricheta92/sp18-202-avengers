@@ -169,3 +169,11 @@ No.
 * What I did yesterday - I worked on the architectural design of the game.
 * What I will do today - Apply design pattern. Write unit test cases.  
 * Blocker - No blocker as of now.
+
+# Day 6 - 12th April
+
+#### Prateek 
+* What I did yesterday - Handed over the basic setup to the team
+* What I will do today - Researching about the implementation of the design pattern
+* Blocker - No blocker as of now.
+
