@@ -150,6 +150,11 @@ No.
 
 # Day 5 - 11th April
 
+#### Sricheta
+* What I did yesterday - I worked on setting up initial junit test cases of project
+* What I will do today - I will go test driven programming today.
+* Blocker - No blocker as of now.
+
 #### Mangesh
 * What I did yesterday - I worked on architecture design of game.
 * What I will do today - I will start implementation of game. 
