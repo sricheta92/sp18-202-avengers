@@ -186,3 +186,8 @@ No.
 * What I did yesterday - Set up of node server.
 * What I will do today - Learned about phaser JS.
 * Blocker - No blocker as of now.
+
+#### Kalikalyan 
+* What I did yesterday - Basic design patterns study.
+* What I will do today - Exploring phaser JS.
+* Blocker - No blocker as of now.
