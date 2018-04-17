@@ -191,3 +191,10 @@ No.
 * What I did yesterday - Basic design patterns study.
 * What I will do today - Exploring phaser JS.
 * Blocker - No blocker as of now.
+
+#### Huy 
+* What I did yesterday - Read about NodeJS and Javascript 
+* What I will do today - Coded. 
+* Blocker - No blocker as of now.
+
+
