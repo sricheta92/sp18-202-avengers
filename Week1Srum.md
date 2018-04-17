@@ -181,3 +181,8 @@ No.
 * What I did yesterday - Code over the basic setup of the code.
 * What I will do today - Read about Phaser JS.
 * Blocker - No blocker as of now.
+
+#### Mangesh 
+* What I did yesterday - Set up of node server.
+* What I will do today - Learned about phaser JS.
+* Blocker - No blocker as of now.
