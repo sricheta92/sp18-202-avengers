@@ -197,4 +197,11 @@ No.
 * What I will do today - Coded. 
 * Blocker - No blocker as of now.
 
+# Day 7 - 13th April
+
+#### Sricheta
+* What I did yesterday - Read about Phaser JS 
+* What I will do today - will start coding today on my story. 
+* Blocker - No blocker as of now.
+
 
