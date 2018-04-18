@@ -213,3 +213,9 @@ No.
 * What I did yesterday - Phaser JS tutorials  
 * What I will do today - Code 
 * Blocker - No blocker
+
+#### Huy	
+
+* What I did yesterday - Read on NodeJS 
+* What I will do today - Code
+* Blocker - Run time error
