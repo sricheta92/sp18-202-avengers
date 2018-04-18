@@ -204,4 +204,9 @@ No.
 * What I will do today - will start coding today on my story. 
 * Blocker - No blocker as of now.
 
+#### Prateek 
+* What I did yesterday - Started learning about Phaser JS  
+* What I will do today - Code 
+* Blocker - No blocker
+
 
