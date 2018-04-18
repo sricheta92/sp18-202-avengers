@@ -209,4 +209,7 @@ No.
 * What I will do today - Code 
 * Blocker - No blocker
 
-
+#### Mangesh 
+* What I did yesterday - Phaser JS tutorials  
+* What I will do today - Code 
+* Blocker - No blocker
