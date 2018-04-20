@@ -43,4 +43,11 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-module.exports = app;
+
+app.set('port', (process.env.PORT || 5000));
+
+app.listen(app.get('port'), function() {
+    console.log('game is running on port', app.get('port'));
+});
+
+//module.exports = app;
