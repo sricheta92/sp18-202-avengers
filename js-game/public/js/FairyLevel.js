@@ -1,7 +1,5 @@
 Game.FairyLevel = function(game){
-    console.log("Level2 constructor");
 
-    // score count
     this.count = 0;
     // end score count
     this.rocks = null;
@@ -11,7 +9,6 @@ Game.FairyLevel = function(game){
     this.compositeController = new CompositeController(this);
     this.fireballs = null;
     this.scoreText = null;
-
 };
 
 
@@ -25,7 +22,7 @@ Game.FairyLevel.prototype = {
         this.map = this.add.tilemap('map');
         this.map.addTilesetImage('tileset');
 
-        // load player
+        // load pla
         this.player = this.add.sprite(75 , 800 , 'player');
         this.player.anchor.setTo(0.5,0.5);
         this.player.animations.add('idle' , [0,1] , 1 , true);
@@ -59,6 +56,12 @@ Game.FairyLevel.prototype = {
             if(left.isDown){
                 if(game.player.x > 0)
                     game.player.x -= 5;
+            }
+        }));
+
+        this.compositeController.add(new Command(this, function (game) {
+            if(game.count == 5) {
+                game.game.screenStateController.next("FairyLevel", game.game);
             }
         }));
 
