@@ -6,3 +6,19 @@ body {
 a {
   color: #00B7FF;
 }
+
+
+html {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background-color: #000;
+  height: 100%;
+}
+
+.flex-fill {
+  flex: 1
+}
+
