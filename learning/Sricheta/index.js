@@ -13,7 +13,7 @@ function preload() {
 
 }
 
-var player;
+var player;  // no of players
 var aliens;
 var bullets;
 var bulletTime = 0;
