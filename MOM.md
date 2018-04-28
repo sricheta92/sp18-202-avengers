@@ -12,3 +12,11 @@
 **What are the current blockers/challenges the team is facing?**
 * Boil down and decide framework to be used.
 * Game idea and complexity.
+
+## April 7 - 17 
+
+* Assigned each project member a technology domain of what they will research and start working on.
+* Discussed about the entire system architecture for our project.
+* Several discussions about how to attain front-end consistency and finally reached a conclusion.
+* What are the team agendas for the next meeting?
+* Resolve any problems faced by team members and discuss issues if there is any team backlog.
