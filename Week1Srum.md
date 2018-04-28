@@ -219,3 +219,37 @@ No.
 * What I did yesterday - Read on NodeJS 
 * What I will do today - Code
 * Blocker - Run time error
+
+#### Kalikalyan
+
+* What I did yesterday - Read NodeJS
+* What I will do today - will start coding today
+* Blocker - No blocker
+
+# Day 8 - 14th April
+
+#### Sricheta 
+* What I did yesterday -  I read about decorator pattern
+* What I will do today - I will implement decorator pattern
+* Blocker - No blocker as of now.
+
+# Day 9 - 15th April
+
+#### Sricheta 
+* What I did yesterday -  I wrote psudeo code of decorator pattern
+* What I will do today - I will read about Phaser JS
+* Blocker - getting acquainted with Phaser JS
+
+# Day 10 - 16th April
+
+#### Sricheta 
+* What I did yesterday -  I read about Phaser JS
+* What I will do today - started implementing decorator Pattern in the game in JS
+* Blocker - no blocker
+
+# Day 11 - 17th April
+
+#### Sricheta 
+* What I did yesterday -  started implementing decorator Pattern in the game in JS
+* What I will do today - comtinue with the same
+* Blocker - waiting for input from one of the team member
