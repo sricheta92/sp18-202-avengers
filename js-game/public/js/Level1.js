@@ -58,8 +58,8 @@ Game.Level1.prototype = {
 		this.map.addTilesetImage('tileset');
 		
 
-		this.layer = this.map.createLayer(0) ;
-		this.layer.resizeWorld() ;
+		this.layer = this.map.createLayer(0);
+		this.layer.resizeWorld();
 
 		
 		this.map.setCollisionBetween(0 , 500);
