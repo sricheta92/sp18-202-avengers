@@ -10,6 +10,7 @@ Game.Level1.prototype = {
   },
 
   create: function() {
+    console.log("test");
     this.add.tileSprite(0, 0, Game.WIDTH, Game.HEIGHT, Game.level1.TILESPRITE_KEY);
 
     const tilemap = this.add.tilemap(Game.level1.TILEMAP_KEY);
