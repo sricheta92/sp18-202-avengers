@@ -19,6 +19,10 @@ Game.Level1 = function(game){
     this.scoreText = null ;
     this.winText = null;
 
+    this.scoreText = this.add.text(800,50,'Score' , {font : '32px Arial' , fill : '#fff'});
+
+
+
 
     this.factory = new GamePartsFactory(this);
     this.compositeController = new CompositeController(this);
@@ -200,7 +204,15 @@ Game.Level1.prototype = {
             }
         }));
 
-        this.scoreText = this.add.text(800,50,'Score' , {font : '32px Arial' , fill : '#fff'});
+        this.compositeController.add(new Command(this, function (game) {
+            game.scoreText.text = 'Score : ' + this.score ;
+
+            if(game.score === 8){
+                game.winText.visible = true ;
+                game.scoreText.visible = false ;
+            }
+        }));
+
 		this.winText = this.add.text(this.world.centerX , this.world.centerY , 'You Win!',  {font : '32px Arial' , fill : '#fff'} ) ;
 		this.winText.visible = false ;
 
@@ -224,12 +236,6 @@ Game.Level1.prototype = {
  
         this.compositeController.update();
 
-		this.scoreText.text = 'Score : ' + this.score ;
-
-		if(this.score === 8){
-			this.winText.visible = true ;
-			this.scoreText.visible = false ;
-		}
 
 	},
 
