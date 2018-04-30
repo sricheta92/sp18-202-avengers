@@ -1,25 +1,33 @@
 Game.Level1 = function(game){
+
+    this.map = null ;
+    this.layer = null;
+
+    this.player = null ;
+    this.controls  = {} ;
+    this.playerSpeed = 150 ;
+
+    this.enemies = null ;
+    this.enemies2 = null;
+    this.enemies3 = null;
+    this.enemies4 = null;
+
+    this.bullets = null ;
+    this.bulletTime = 0 ;
+    this.fireButton = null ;
+
+
+    this.score = 0 ;
+    this.scoreText = null ;
+    this.winText = null;
+
+
     this.factory = new GamePartsFactory(this);
+    this.compositeController = new CompositeController(this);
 
 };
 
 
-var map ;
-var layer ;
-
-var player ;
-var controls  = {} ;
-var playerSpeed = 150 ; 
- 
-var enemies  ; 
-var bullets ; 
-var bulletTime = 0 ; 
-var fireButton ; 
-
-
-var score = 0 ; 
-var scoreText ; 
-var winText ; 
 
 
 Game.Level1.prototype = {
@@ -35,51 +43,48 @@ Game.Level1.prototype = {
 		this.add.tileSprite(0, 0, 640, 640, 'background');
 
 		// The enemy's bullets
-	    bullets = this.factory.create("bullets");
-	    enemies = this.factory.create("enemies");
-	    enemies2 = this.factory.create("enemies");
-	    enemies3 = this.factory.create("enemies");
+	    this.bullets = this.factory.create("bullets");
+	    this.enemies = this.factory.create("enemies");
+	    this.enemies2 = this.factory.create("enemies");
+	    this.enemies3 = this.factory.create("enemies");
 
-	    enemies4 = this.factory.create("enemies");
+	    this.enemies4 = this.factory.create("enemies");
 
 
 	    this.createEnemies();
 
 		//this.physics.arcade.gravity.y = 1400 ; 
 
-		map = this.add.tilemap('map');
+		this.map = this.add.tilemap('map');
 		
 
-		map.addTilesetImage('tileset');
+		this.map.addTilesetImage('tileset');
 		
 
-		layer = map.createLayer(0) ;
-		layer.resizeWorld() ; 
+		this.layer = this.map.createLayer(0) ;
+		this.layer.resizeWorld() ;
 
 		
-		map.setCollisionBetween(0 , 500);
-		map.setCollision([155,135] , false) ; 
+		this.map.setCollisionBetween(0 , 500);
+		this.map.setCollision([155,135] , false) ;
 
-		map.setTileIndexCallback(0 , this.resetPlayer , this );
-		map.setTileIndexCallback(2 , this.getCoin , this );
+		this.map.setTileIndexCallback(0 , this.resetPlayer , this );
+		this.map.setTileIndexCallback(2 , this.getCoin , this );
 		
 
-		player = this.add.sprite(75 , 800 , 'player');
-		player.anchor.setTo(0.5,0.5);
+		this.player = this.add.sprite(75 , 800 , 'player');
+		this.player.anchor.setTo(0.5,0.5);
 		
-		
 
+		this.player.animations.add('idle' , [0,1] , 1 , true);
+		this.player.animations.add('jump' , [2] , 1 , true);
+		this.player.animations.add('run' , [3,4,5,6,7,8,9] , 7 , true);
+		this.physics.arcade.enable(this.player);
+		this.camera.follow(this.player);
 
+		this.player.body.collideWorldBounds = true ;
 
-		player.animations.add('idle' , [0,1] , 1 , true);
-		player.animations.add('jump' , [2] , 1 , true);
-		player.animations.add('run' , [3,4,5,6,7,8,9] , 7 , true);
-		this.physics.arcade.enable(player);
-		this.camera.follow(player);
-
-		player.body.collideWorldBounds = true ;
-
-		controls = {
+		this.controls = {
 			right : this.input.keyboard.addKey(Phaser.Keyboard.D),
 			left : this.input.keyboard.addKey(Phaser.Keyboard.A),
 			up : this.input.keyboard.addKey(Phaser.Keyboard.W),
@@ -91,130 +96,130 @@ Game.Level1.prototype = {
 		};
 
 		
-		scoreText = this.add.text(800,50,'Score' , {font : '32px Arial' , fill : '#fff'});
-		winText = this.add.text(this.world.centerX , this.world.centerY , 'You Win!',  {font : '32px Arial' , fill : '#fff'} ) ; 
-		winText.visible = false ; 
+		this.scoreText = this.add.text(800,50,'Score' , {font : '32px Arial' , fill : '#fff'});
+		this.winText = this.add.text(this.world.centerX , this.world.centerY , 'You Win!',  {font : '32px Arial' , fill : '#fff'} ) ;
+		this.winText.visible = false ;
 
 	},
 
 	update : function(){
-		this.physics.arcade.collide(player , layer);
+		this.physics.arcade.collide(this.player , this.layer);
 
-		player.body.velocity.x = 0 ;
-		player.body.velocity.y = 0 ;
-
-
-		this.physics.arcade.overlap(bullets , enemies , this.collisionHandler , null , this) ; 
-		this.physics.arcade.overlap(bullets , enemies2 , this.collisionHandler , null , this) ; 
-		this.physics.arcade.overlap(bullets , enemies3 , this.collisionHandler , null , this) ; 
-		this.physics.arcade.overlap(bullets , enemies4 , this.collisionHandler , null , this) ; 
-		this.physics.arcade.overlap(player , enemies , this.collisionHandlerForPlayer , null , this) ; 
-		this.physics.arcade.overlap(player , enemies2 , this.collisionHandlerForPlayer , null , this) ; 
-		this.physics.arcade.overlap(player , enemies3 , this.collisionHandlerForPlayer , null , this) ; 
-		this.physics.arcade.overlap(player , enemies4 , this.collisionHandlerForPlayer , null , this) ; 
+		this.player.body.velocity.x = 0 ;
+		this.player.body.velocity.y = 0 ;
 
 
-		if(controls.up.isDown){
-			player.animations.play('run');
-			player.scale.setTo(1,1);
-			player.body.velocity.y -= playerSpeed ;
+		this.physics.arcade.overlap(this.bullets , this.enemies , this.collisionHandler , null , this) ;
+		this.physics.arcade.overlap(this.bullets , this.enemies2 , this.collisionHandler , null , this) ;
+		this.physics.arcade.overlap(this.bullets , this.enemies3 , this.collisionHandler , null , this) ;
+		this.physics.arcade.overlap(this.bullets , this.enemies4 , this.collisionHandler , null , this) ;
+		this.physics.arcade.overlap(this.player , this.enemies , this.collisionHandlerForPlayer , null , this) ;
+		this.physics.arcade.overlap(this.player , this.enemies2 , this.collisionHandlerForPlayer , null , this) ;
+		this.physics.arcade.overlap(this.player , this.enemies3 , this.collisionHandlerForPlayer , null , this) ;
+		this.physics.arcade.overlap(this.player , this.enemies4 , this.collisionHandlerForPlayer , null , this) ;
+
+
+		if(this.controls.up.isDown){
+			this.player.animations.play('run');
+			this.player.scale.setTo(1,1);
+			this.player.body.velocity.y -= this.playerSpeed ;
 		}
 
-		if(controls.down.isDown){
-			player.animations.play('run');
-			player.scale.setTo(-1,1);
-			player.body.velocity.y += playerSpeed ;
+		if(this.controls.down.isDown){
+			this.player.animations.play('run');
+			this.player.scale.setTo(-1,1);
+			this.player.body.velocity.y += this.playerSpeed ;
 		}		
 		
 
-		if(controls.right.isDown){
-			player.animations.play('run');
-			player.scale.setTo(1,1);
-			player.body.velocity.x += playerSpeed ;
+		if(this.controls.right.isDown){
+			this.player.animations.play('run');
+			this.player.scale.setTo(1,1);
+			this.player.body.velocity.x += this.playerSpeed ;
 		}
 
-		if(controls.left.isDown){
-			player.animations.play('run');
-			player.scale.setTo(-1,1);
-			player.body.velocity.x -= playerSpeed ;
+		if(this.controls.left.isDown){
+			this.player.animations.play('run');
+			this.player.scale.setTo(-1,1);
+			this.player.body.velocity.x -= this.playerSpeed ;
 		}		
 
-		if(player.body.velocity.x == 0 && player.body.velocity.y ==0){
-			player.animations.play('idle');
+		if(this.player.body.velocity.x === 0 && this.player.body.velocity.y === 0){
+			this.player.animations.play('idle');
 		}
 
-		if(controls.fireButtonI.isDown){
-				if(this.time.now > bulletTime){
-				bullet = bullets.getFirstExists(false);
+		if(this.controls.fireButtonI.isDown){
+				if(this.time.now > this.bulletTime){
+				bullet = this.bullets.getFirstExists(false);
 
 				if(bullet){
-					bullet.reset(player.x , player.y);
+					bullet.reset(this.player.x , this.player.y);
 					bullet.body.velocity.y = -200 ; 
-					bulletTime = this.time.now + 1000 ; 
+					this.bulletTime = this.time.now + 1000 ;
 				}
 			}
 		}
 
-		if(controls.fireButtonJ.isDown){
-			if(this.time.now > bulletTime){
-				bullet = bullets.getFirstExists(false);
+		if(this.controls.fireButtonJ.isDown){
+			if(this.time.now > this.bulletTime){
+				bullet = this.bullets.getFirstExists(false);
 
 				if(bullet){
-					bullet.reset(player.x , player.y);
+					bullet.reset(this.player.x , this.player.y);
 					bullet.body.velocity.x = -200 ; 
-					bulletTime = this.time.now + 1000 ; 
+					this.bulletTime = this.time.now + 1000 ;
 				}
 			}
 		}
 
-		if(controls.fireButtonK.isDown){
-			if(this.time.now > bulletTime){
-				bullet = bullets.getFirstExists(false);
+		if(this.controls.fireButtonK.isDown){
+			if(this.time.now > this.bulletTime){
+				bullet = this.bullets.getFirstExists(false);
 
 				if(bullet){
-					bullet.reset(player.x , player.y);
+					bullet.reset(this.player.x , this.player.y);
 					bullet.body.velocity.y = +200 ; 
-					bulletTime = this.time.now + 1000 ; 
+					this.bulletTime = this.time.now + 1000 ;
 				}
 			}
 		}
 
-		if(controls.fireButtonL.isDown){
-			if(this.time.now > bulletTime){
-				bullet = bullets.getFirstExists(false);
+		if(this.controls.fireButtonL.isDown){
+			if(this.time.now > this.bulletTime){
+				bullet = this.bullets.getFirstExists(false);
 
 				if(bullet){
-					bullet.reset(player.x , player.y);
+					bullet.reset(this.player.x , this.player.y);
 					bullet.body.velocity.x = +200 ; 
-					bulletTime = this.time.now + 1000 ; 
+					this.bulletTime = this.time.now + 1000 ;
 				}
 			}
 		}
 
 
-		scoreText.text = 'Score : ' + score ; 
+		this.scoreText.text = 'Score : ' + this.score ;
 
-		if(score == 8){
-			winText.visible = true ; 
-			scoreText.visible = false ; 
+		if(this.score === 8){
+			this.winText.visible = true ;
+			this.scoreText.visible = false ;
 		}
 
 	},
 
 	resetPlayer: function(){
-		player.reset(100 , 700 ); 
+		this.player.reset(100 , 700 );
 	},
 
 	getCoin : function(){
-		map.putTile(-1 , layer.getTileX(player.x), layer.getTileY(player.y)) ;
+		this.map.putTile(-1 , this.layer.getTileX(this.player.x), this.layer.getTileY(this.player.y)) ;
 	},
 
 	collisionHandler : function(bullet , enemy ){
 		console.log('Collision handler called '); 
 		bullet.kill();
 		enemy.kill() ; 
-		score ++ ; 
-		console.log("Score " , score ) ; 
+		this.score ++ ;
+		console.log("Score " , this.score ) ;
 	},
 
 	collisionHandlerForPlayer : function(player , enemy){
@@ -222,28 +227,28 @@ Game.Level1.prototype = {
 	},
 
 	createEnemies : function(){
-		var enemy = this.factory.createEnemy(enemies);
-		var enemy2 = this.factory.createEnemy(enemies);
-		var enemy3 = this.factory.createEnemy(enemies2);
-		var enemy4 = this.factory.createEnemy(enemies2);
-		var enemy5 = this.factory.createEnemy(enemies3);
-		var enemy6 = this.factory.createEnemy(enemies3);
-		var enemy7 = this.factory.createEnemy(enemies4);
-		var enemy8 = this.factory.createEnemy(enemies4);
+		var enemy = this.factory.createEnemy(this.enemies);
+		var enemy2 = this.factory.createEnemy(this.enemies);
+		var enemy3 = this.factory.createEnemy(this.enemies2);
+		var enemy4 = this.factory.createEnemy(this.enemies2);
+		var enemy5 = this.factory.createEnemy(this.enemies3);
+		var enemy6 = this.factory.createEnemy(this.enemies3);
+		var enemy7 = this.factory.createEnemy(this.enemies4);
+		var enemy8 = this.factory.createEnemy(this.enemies4);
 
 
 
-		enemies.x = 600;
-		enemies.y = 650 ;
+		this.enemies.x = 600;
+		this.enemies.y = 650 ;
 
-		enemies2.x = 300;
-		enemies2.y = 400 ;
+		this.enemies2.x = 300;
+		this.enemies2.y = 400 ;
 
-		enemies3.x = 600;
-		enemies3.y = 100 ;
+		this.enemies3.x = 600;
+		this.enemies3.y = 100 ;
 
-		enemies4.x = 25;
-		enemies4.y = 10 ;
+		this.enemies4.x = 25;
+		this.enemies4.y = 10 ;
 
 
 		var tween2 = this.add.tween(enemy2).to({x : 200 } , 2000 , Phaser.Easing.Linear.None, true , 0 , 1000, true);
@@ -267,7 +272,7 @@ Game.Level1.prototype = {
 	},
 
 	descend : function(){
-		enemies.y =+ 10 ; 
+		this.enemies.y =+ 10 ;
 	},
 	
 	

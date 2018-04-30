@@ -1,3 +1,9 @@
-var Command = function (execute, undo, value) {
+
+function Command(execute) {
+    this.execute = execute;
+};
+
+
+Command.prototype.update = function () {
 
 };
