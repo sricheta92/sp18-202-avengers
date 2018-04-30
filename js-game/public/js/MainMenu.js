@@ -17,7 +17,8 @@ Game.MainMenu.prototype = {
 	},
 
 	update: function() {
-		if(controls.space.isDown){ 
+		if(controls.space.isDown){
+		    console.log("space");
 			this.start();
 		}
 

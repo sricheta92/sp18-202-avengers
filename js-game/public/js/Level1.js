@@ -19,9 +19,6 @@ Game.Level1 = function(game){
     this.scoreText = null ;
     this.winText = null;
 
-    this.scoreText = this.add.text(800,50,'Score' , {font : '32px Arial' , fill : '#fff'});
-
-
 
 
     this.factory = new GamePartsFactory(this);
@@ -49,9 +46,7 @@ Game.Level1.prototype = {
 	    this.enemies = this.factory.create("enemies");
 	    this.enemies2 = this.factory.create("enemies");
 	    this.enemies3 = this.factory.create("enemies");
-
 	    this.enemies4 = this.factory.create("enemies");
-
 
 	    this.createEnemies();
 
@@ -203,6 +198,8 @@ Game.Level1.prototype = {
                 }
             }
         }));
+
+        this.scoreText = this.add.text(800,50,'Score' , {font : '32px Arial' , fill : '#fff'});
 
         this.compositeController.add(new Command(this, function (game) {
             game.scoreText.text = 'Score : ' + this.score ;
