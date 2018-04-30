@@ -4,7 +4,6 @@ Game.Level1 = function(game){
     this.layer = null;
 
     this.player = null ;
-    this.controls  = {} ;
     this.playerSpeed = 150 ;
 
     this.enemies = null ;
@@ -15,7 +14,6 @@ Game.Level1 = function(game){
     this.bullets = null ;
     this.bulletTime = 0 ;
     this.fireButton = null ;
-
 
     this.score = 0 ;
     this.scoreText = null ;
@@ -84,19 +82,125 @@ Game.Level1.prototype = {
 
 		this.player.body.collideWorldBounds = true ;
 
-		this.controls = {
-			right : this.input.keyboard.addKey(Phaser.Keyboard.D),
-			left : this.input.keyboard.addKey(Phaser.Keyboard.A),
-			up : this.input.keyboard.addKey(Phaser.Keyboard.W),
-			down : this.input.keyboard.addKey(Phaser.Keyboard.S),
-			fireButtonI : this.input.keyboard.addKey(Phaser.Keyboard.I),
-			fireButtonJ : this.input.keyboard.addKey(Phaser.Keyboard.J),
-			fireButtonK : this.input.keyboard.addKey(Phaser.Keyboard.K),
-			fireButtonL : this.input.keyboard.addKey(Phaser.Keyboard.L),
-		};
+		this.compositeController.add(new Command(this, function (game) {
+		    var right = game.input.keyboard.addKey(Phaser.Keyboard.D);
 
-		
-		this.scoreText = this.add.text(800,50,'Score' , {font : '32px Arial' , fill : '#fff'});
+		    if(right.isDown){
+
+                game.player.animations.play('run');
+                game.player.scale.setTo(1,1);
+                game.player.body.velocity.x += game.playerSpeed ;
+            }
+        }));
+
+        this.compositeController.add(new Command(this, function (game) {
+            var left = game.input.keyboard.addKey(Phaser.Keyboard.A);
+
+            if( left.isDown){
+                game.player.animations.play('run');
+                game.player.scale.setTo(-1,1);
+                game.player.body.velocity.x -= game.playerSpeed ;
+            }
+        }));
+
+
+
+        this.compositeController.add(new Command(this, function (game) {
+            var up = game.input.keyboard.addKey(Phaser.Keyboard.W);
+
+            if(up.isDown){
+                game.player.animations.play('run');
+                game.player.scale.setTo(1,1);
+                game.player.body.velocity.y -= game.playerSpeed ;
+            }
+
+        }));
+
+
+        this.compositeController.add(new Command(this, function (game) {
+            var down = game.input.keyboard.addKey(Phaser.Keyboard.S);
+
+            if(down.isDown){
+                game.player.animations.play('run');
+                game.player.scale.setTo(-1,1);
+                game.player.body.velocity.y += game.playerSpeed ;
+            }
+
+        }));
+
+
+        this.compositeController.add(new Command(this, function (game) {
+            var fireButtonI = game.input.keyboard.addKey(Phaser.Keyboard.I);
+
+
+            if(fireButtonI.isDown){
+                if(game.time.now > game.bulletTime){
+                    var  bullet = game.bullets.getFirstExists(false);
+
+                    if(bullet){
+                        bullet.reset(game.player.x , game.player.y);
+                        bullet.body.velocity.y = -200 ;
+                        game.bulletTime = game.time.now + 1000 ;
+                    }
+                }
+            }
+
+        }));
+
+
+        this.compositeController.add(new Command(this, function (game) {
+            var fireButtonJ = game.input.keyboard.addKey(Phaser.Keyboard.J);
+
+
+            if(fireButtonJ.isDown){
+                if(game.time.now > game.bulletTime){
+                    var bullet = game.bullets.getFirstExists(false);
+
+                    if(bullet){
+                        bullet.reset(game.player.x , game.player.y);
+                        bullet.body.velocity.x = -200 ;
+                        game.bulletTime = game.time.now + 1000 ;
+                    }
+                }
+            }
+
+        }));
+
+        this.compositeController.add(new Command(this, function (game) {
+            var fireButtonK = game.input.keyboard.addKey(Phaser.Keyboard.K);
+
+
+            if(fireButtonK.isDown){
+                if(game.time.now > game.bulletTime){
+                    var bullet = game.bullets.getFirstExists(false);
+
+                    if(bullet){
+                        bullet.reset(game.player.x , game.player.y);
+                        bullet.body.velocity.y = +200 ;
+                        game.bulletTime = game.time.now + 1000 ;
+                    }
+                }
+            }
+        }));
+
+
+        this.compositeController.add(new Command(this, function (game) {
+            var fireButtonL = game.input.keyboard.addKey(Phaser.Keyboard.L);
+
+            if(fireButtonL.isDown){
+                if(game.time.now > game.bulletTime){
+                    var bullet = game.bullets.getFirstExists(false);
+
+                    if(bullet){
+                        bullet.reset(game.player.x , game.player.y);
+                        bullet.body.velocity.x = +200 ;
+                        game.bulletTime = game.time.now + 1000 ;
+                    }
+                }
+            }
+        }));
+
+        this.scoreText = this.add.text(800,50,'Score' , {font : '32px Arial' , fill : '#fff'});
 		this.winText = this.add.text(this.world.centerX , this.world.centerY , 'You Win!',  {font : '32px Arial' , fill : '#fff'} ) ;
 		this.winText.visible = false ;
 
@@ -117,85 +221,8 @@ Game.Level1.prototype = {
 		this.physics.arcade.overlap(this.player , this.enemies2 , this.collisionHandlerForPlayer , null , this) ;
 		this.physics.arcade.overlap(this.player , this.enemies3 , this.collisionHandlerForPlayer , null , this) ;
 		this.physics.arcade.overlap(this.player , this.enemies4 , this.collisionHandlerForPlayer , null , this) ;
-
-
-		if(this.controls.up.isDown){
-			this.player.animations.play('run');
-			this.player.scale.setTo(1,1);
-			this.player.body.velocity.y -= this.playerSpeed ;
-		}
-
-		if(this.controls.down.isDown){
-			this.player.animations.play('run');
-			this.player.scale.setTo(-1,1);
-			this.player.body.velocity.y += this.playerSpeed ;
-		}		
-		
-
-		if(this.controls.right.isDown){
-			this.player.animations.play('run');
-			this.player.scale.setTo(1,1);
-			this.player.body.velocity.x += this.playerSpeed ;
-		}
-
-		if(this.controls.left.isDown){
-			this.player.animations.play('run');
-			this.player.scale.setTo(-1,1);
-			this.player.body.velocity.x -= this.playerSpeed ;
-		}		
-
-		if(this.player.body.velocity.x === 0 && this.player.body.velocity.y === 0){
-			this.player.animations.play('idle');
-		}
-
-		if(this.controls.fireButtonI.isDown){
-				if(this.time.now > this.bulletTime){
-				bullet = this.bullets.getFirstExists(false);
-
-				if(bullet){
-					bullet.reset(this.player.x , this.player.y);
-					bullet.body.velocity.y = -200 ; 
-					this.bulletTime = this.time.now + 1000 ;
-				}
-			}
-		}
-
-		if(this.controls.fireButtonJ.isDown){
-			if(this.time.now > this.bulletTime){
-				bullet = this.bullets.getFirstExists(false);
-
-				if(bullet){
-					bullet.reset(this.player.x , this.player.y);
-					bullet.body.velocity.x = -200 ; 
-					this.bulletTime = this.time.now + 1000 ;
-				}
-			}
-		}
-
-		if(this.controls.fireButtonK.isDown){
-			if(this.time.now > this.bulletTime){
-				bullet = this.bullets.getFirstExists(false);
-
-				if(bullet){
-					bullet.reset(this.player.x , this.player.y);
-					bullet.body.velocity.y = +200 ; 
-					this.bulletTime = this.time.now + 1000 ;
-				}
-			}
-		}
-
-		if(this.controls.fireButtonL.isDown){
-			if(this.time.now > this.bulletTime){
-				bullet = this.bullets.getFirstExists(false);
-
-				if(bullet){
-					bullet.reset(this.player.x , this.player.y);
-					bullet.body.velocity.x = +200 ; 
-					this.bulletTime = this.time.now + 1000 ;
-				}
-			}
-		}
-
+ 
+        this.compositeController.update();
 
 		this.scoreText.text = 'Score : ' + this.score ;
 
@@ -273,9 +300,5 @@ Game.Level1.prototype = {
 
 	descend : function(){
 		this.enemies.y =+ 10 ;
-	},
-	
-	
-
-
+	}
 }; 
