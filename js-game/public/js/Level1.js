@@ -19,8 +19,6 @@ Game.Level1 = function(game){
     this.scoreText = null ;
     this.winText = null;
 
-
-
     this.factory = new GamePartsFactory(this);
     this.compositeController = new CompositeController(this);
 
