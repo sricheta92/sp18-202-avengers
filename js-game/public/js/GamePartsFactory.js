@@ -23,11 +23,11 @@ GamePartsFactory.prototype.create = function (input) {
         object.physicsBodyType = Phaser.Physics.ARCADE;
     }
 
-    if (input === "bullets"){
+    if (input === "bombs"){
         object = this.level.add.group();
         object.enableBody = true;
         object.physicsBodyType = Phaser.Physics.ARCADE;
-        object.createMultiple(30, 'bullet');
+        object.createMultiple(30, 'bomb');
         object.setAll('anchor.x', 0.5);
         object.setAll('anchor.y', 1);
         object.setAll('outOfBoundsKill', true);
@@ -71,7 +71,15 @@ GamePartsFactory.prototype.createFireball = function (group) {
 GamePartsFactory.prototype.createEnemy = function (enemiesGroup) {
     var enemy = enemiesGroup.create(48, 50, 'enemy');
     enemy.anchor.setTo(0.5,0.5);
+    enemy.scale.set(0.1,0.1);
     return enemy;
+};
+
+GamePartsFactory.prototype.createBomb = function (group) {
+    var bomb = group.create(48, 50, 'bombs');
+    bomb.anchor.setTo(0,0);
+    bomb.scale.set(0.1,0.1);
+    return bomb;
 };
 
 GamePartsFactory.prototype.createRock = function (group) {

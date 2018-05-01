@@ -2,23 +2,18 @@ Game.Level1 = function(game){
 
     this.map = null ;
     this.layer = null;
-
     this.player = null ;
     this.playerSpeed = 150 ;
-
     this.enemies = null ;
     this.enemies2 = null;
     this.enemies3 = null;
     this.enemies4 = null;
-
-    this.bullets = null ;
-    this.bulletTime = 0 ;
+    this.bomb = null ;
+    this.bombTime = 0 ;
     this.fireButton = null ;
-
     this.score = 0 ;
     this.scoreText = null ;
     this.winText = null;
-
     this.factory = new GamePartsFactory(this);
     this.compositeController = new CompositeController(this);
 
@@ -30,30 +25,35 @@ Game.Level1 = function(game){
 Game.Level1.prototype = {
 	preload : function(){
 		//Load Enemy
-		this.load.image('enemy','../assets/enemy.jpg');
-		this.load.image('bullet','../assets/Bullet.jpg');
+		this.load.image('enemy','../assets/enemynew.png');
+		this.load.image('bomb','../assets/bomb.png');
 	},
 
 
 	create : function(){
 		
 		this.add.tileSprite(0, 0, 640, 640, 'background');
+		this.map = this.add.tilemap('map');
+		this.map.addTilesetImage('tileset');
 
-		// The enemy's bullets
-	    this.bullets = this.factory.create("bullets");
+
+		this.player = this.add.sprite(75 , 800 , 'player');
+		this.player.anchor.setTo(0.5,0.5);
+		this.player.animations.add('idle' , [0,1] , 1 , true);
+		this.player.animations.add('jump' , [2] , 1 , true);
+		this.player.animations.add('run' , [3,4,5,6,7,8,9] , 7 , true);
+		this.physics.arcade.enable(this.player);
+		this.camera.follow(this.player);
+		this.player.body.collideWorldBounds = true ;
+
+
+	    this.bomb = this.factory.create("bombs");
 	    this.enemies = this.factory.create("enemies");
 	    this.enemies2 = this.factory.create("enemies");
 	    this.enemies3 = this.factory.create("enemies");
 	    this.enemies4 = this.factory.create("enemies");
 
 	    this.createEnemies();
-
-		//this.physics.arcade.gravity.y = 1400 ; 
-
-		this.map = this.add.tilemap('map');
-		
-
-		this.map.addTilesetImage('tileset');
 		
 
 		this.layer = this.map.createLayer(0);
@@ -67,17 +67,6 @@ Game.Level1.prototype = {
 		this.map.setTileIndexCallback(2 , this.getCoin , this );
 		
 
-		this.player = this.add.sprite(75 , 800 , 'player');
-		this.player.anchor.setTo(0.5,0.5);
-		
-
-		this.player.animations.add('idle' , [0,1] , 1 , true);
-		this.player.animations.add('jump' , [2] , 1 , true);
-		this.player.animations.add('run' , [3,4,5,6,7,8,9] , 7 , true);
-		this.physics.arcade.enable(this.player);
-		this.camera.follow(this.player);
-
-		this.player.body.collideWorldBounds = true ;
 
 		this.compositeController.add(new Command(this, function (game) {
 		    var right = game.input.keyboard.addKey(Phaser.Keyboard.D);
@@ -131,13 +120,13 @@ Game.Level1.prototype = {
 
 
             if(fireButtonI.isDown){
-                if(game.time.now > game.bulletTime){
-                    var  bullet = game.bullets.getFirstExists(false);
+                if(game.time.now > game.bombTime){
+                	var bomb = game.factory.createBomb(game.bomb);
 
-                    if(bullet){
-                        bullet.reset(game.player.x , game.player.y);
-                        bullet.body.velocity.y = -200 ;
-                        game.bulletTime = game.time.now + 1000 ;
+                    if(bomb){
+                        bomb.reset(game.player.x , game.player.y);
+                        bomb.body.velocity.y = -200 ;
+                        game.bombTime = game.time.now + 1000 ;
                     }
                 }
             }
@@ -150,13 +139,13 @@ Game.Level1.prototype = {
 
 
             if(fireButtonJ.isDown){
-                if(game.time.now > game.bulletTime){
-                    var bullet = game.bullets.getFirstExists(false);
+                if(game.time.now > game.bombTime){
+                	var bomb = game.factory.createBomb(game.bomb);
 
-                    if(bullet){
-                        bullet.reset(game.player.x , game.player.y);
-                        bullet.body.velocity.x = -200 ;
-                        game.bulletTime = game.time.now + 1000 ;
+                    if(bomb){
+                        bomb.reset(game.player.x , game.player.y);
+                        bomb.body.velocity.x = -200 ;
+                        game.bombTime = game.time.now + 1000 ;
                     }
                 }
             }
@@ -168,13 +157,13 @@ Game.Level1.prototype = {
 
 
             if(fireButtonK.isDown){
-                if(game.time.now > game.bulletTime){
-                    var bullet = game.bullets.getFirstExists(false);
+                if(game.time.now > game.bombTime){
+                	var bomb = game.factory.createBomb(game.bomb);
 
-                    if(bullet){
-                        bullet.reset(game.player.x , game.player.y);
-                        bullet.body.velocity.y = +200 ;
-                        game.bulletTime = game.time.now + 1000 ;
+                    if(bomb){
+                        bomb.reset(game.player.x , game.player.y);
+                        bomb.body.velocity.y = +200 ;
+                        game.bombTime = game.time.now + 1000 ;
                     }
                 }
             }
@@ -185,13 +174,13 @@ Game.Level1.prototype = {
             var fireButtonL = game.input.keyboard.addKey(Phaser.Keyboard.L);
 
             if(fireButtonL.isDown){
-                if(game.time.now > game.bulletTime){
-                    var bullet = game.bullets.getFirstExists(false);
+                if(game.time.now > game.bombTime){
+                	var bomb = game.factory.createBomb(game.bomb);
 
-                    if(bullet){
-                        bullet.reset(game.player.x , game.player.y);
-                        bullet.body.velocity.x = +200 ;
-                        game.bulletTime = game.time.now + 1000 ;
+                    if(bomb){
+                        bomb.reset(game.player.x , game.player.y);
+                        bomb.body.velocity.x = +200 ;
+                        game.bombTime = game.time.now + 1000 ;
                     }
                 }
             }
@@ -220,10 +209,10 @@ Game.Level1.prototype = {
 		this.player.body.velocity.y = 0 ;
 
 
-		this.physics.arcade.overlap(this.bullets , this.enemies , this.collisionHandler , null , this) ;
-		this.physics.arcade.overlap(this.bullets , this.enemies2 , this.collisionHandler , null , this) ;
-		this.physics.arcade.overlap(this.bullets , this.enemies3 , this.collisionHandler , null , this) ;
-		this.physics.arcade.overlap(this.bullets , this.enemies4 , this.collisionHandler , null , this) ;
+		this.physics.arcade.overlap(this.bomb , this.enemies , this.collisionHandler , null , this) ;
+		this.physics.arcade.overlap(this.bomb , this.enemies2 , this.collisionHandler , null , this) ;
+		this.physics.arcade.overlap(this.bomb , this.enemies3 , this.collisionHandler , null , this) ;
+		this.physics.arcade.overlap(this.bomb , this.enemies4 , this.collisionHandler , null , this) ;
 		this.physics.arcade.overlap(this.player , this.enemies , this.collisionHandlerForPlayer , null , this) ;
 		this.physics.arcade.overlap(this.player , this.enemies2 , this.collisionHandlerForPlayer , null , this) ;
 		this.physics.arcade.overlap(this.player , this.enemies3 , this.collisionHandlerForPlayer , null , this) ;
@@ -242,9 +231,9 @@ Game.Level1.prototype = {
 		this.map.putTile(-1 , this.layer.getTileX(this.player.x), this.layer.getTileY(this.player.y)) ;
 	},
 
-	collisionHandler : function(bullet , enemy ){
+	collisionHandler : function(bomb , enemy ){
 		console.log('Collision handler called '); 
-		bullet.kill();
+		bomb.kill();
 		enemy.kill() ; 
 		this.score ++ ;
 		console.log("Score " , this.score ) ;
@@ -266,17 +255,7 @@ Game.Level1.prototype = {
 
 
 
-		this.enemies.x = 600;
-		this.enemies.y = 650 ;
 
-		this.enemies2.x = 300;
-		this.enemies2.y = 400 ;
-
-		this.enemies3.x = 600;
-		this.enemies3.y = 100 ;
-
-		this.enemies4.x = 25;
-		this.enemies4.y = 10 ;
 
 
 		var tween2 = this.add.tween(enemy2).to({x : 200 } , 2000 , Phaser.Easing.Linear.None, true , 0 , 1000, true);
