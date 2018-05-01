@@ -19,7 +19,7 @@ function GameProxy() {
 
 	this.game = new Phaser.Game(640	,640 , Phaser.CANVAS , '');
 
-	this.authenticated = true;
+	this.authenticated = false;
 
 	this.game.state.add('Boot', Game.Boot);
 	this.game.state.add('Preloader', Game.Preloader);
@@ -28,6 +28,12 @@ function GameProxy() {
 
 	this.game.state.add('Level1', Game.Level1);
 	this.game.state.add('FairyLevel', Game.FairyLevel);
+
+
+	this.theQuestion = new Question("type 123", "123", new Command(this, function () {
+	    game.authenticated = true;
+	    game.onStart();
+    }));
 
 	 
 }
@@ -40,11 +46,8 @@ GameProxy.prototype.onStart = function () {
 	 }
 	 else
 	 {
-	 	// to-do
+	     this.theQuestion.askIt();
 	 }
-
-
-	
 }
 
 var game = new GameProxy();

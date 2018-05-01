@@ -2,13 +2,15 @@
  * Author: Huy Vo
  * State Design pattern
  */
-function Question(theQuestion, theSolution) {
+function Question(theQuestion, theSolution, theCommand) {
     this.theQuestion = theQuestion;
     this.theSolution = theSolution;
+    this.theCommand  = theCommand;
 
     this.incorrectState = new IncorrectState(this);
     this.correctState   = new CorrectState(this);
     this.currentState   = this.incorrectState;
+
 }
 Question.prototype.getTheQuestion = function () {
     return this.theQuestion;
@@ -34,6 +36,7 @@ Question.prototype.setCurrentState = function (state) {
     if(this.currentState === "correctState"){
         // move to next level
         console.log("move to next level");
+        this.theCommand.execute();
     }else{
         // refresh
         window.location.href = window.location.href;
