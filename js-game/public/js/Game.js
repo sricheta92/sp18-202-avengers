@@ -15,4 +15,3 @@ game.state.add('FairyLevel', Game.FairyLevel);
 game.onStart = function () {
     game.state.start('Boot');
 };
-
