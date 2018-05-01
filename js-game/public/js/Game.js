@@ -1,20 +1,7 @@
-/*var game = new Phaser.Game(640	,640 , Phaser.CANVAS , '');
-var authenticated = false;
-game.state.add('Boot', Game.Boot);
-game.state.add('Preloader', Game.Preloader);
-game.state.add('MainMenu', Game.MainMenu);
-// Load levels
-game.state.add('Level1', Game.Level1);
-game.state.add('FairyLevel', Game.FairyLevel);
-*/
-
-/**
- * Start boot
+/*
+ * author: Mangesh Tak 
+ * description: Proxy Design Pattern 
  */
-/*game.onStart = function () {
-    game.state.start('Boot');
-};*/
-
 function GameProxy() {
 
 	this.game = new Phaser.Game(640	,640 , Phaser.CANVAS , '');
@@ -38,11 +25,11 @@ function GameProxy() {
 	 
 }
 
-GameProxy.prototype.onStart = function () {
+GameProxy.prototype.start = function (name) {
 
 	 if(this.authenticated===true)
 	 {
-	 	this.game.state.start('Boot');	
+	 	this.game.state.start(name);	
 	 }
 	 else
 	 {

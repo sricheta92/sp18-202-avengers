@@ -1,5 +1,5 @@
 function GamePartsFactory(level) {
-
+    console.log("Enemies Factory");
     this.diff = null;
 
     this.firstDiff = null;
@@ -8,7 +8,7 @@ function GamePartsFactory(level) {
 
     this.enemyCount = 0;
 
-    console.log("Enemies Factory");
+
 }
 
 
@@ -116,9 +116,6 @@ GamePartsFactory.prototype.createRock = function (group) {
 
     var posX = getRandomInt(0, 680);
     var posY = getRandomInt(0, 680);
-
-    console.log(posY);
-    console.log(posX);
 
     var rock = group.create(posX, 10, 'rock');
     rock.anchor.setTo(.05, .5);

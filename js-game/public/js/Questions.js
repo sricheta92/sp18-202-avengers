@@ -1,6 +1,6 @@
 /**
- * Author: Huy Vo
- * State Design pattern
+ * author: Huy Vo
+ * description: State Design pattern
  */
 function Question(theQuestion, theSolution, theCommand) {
     this.theQuestion = theQuestion;
@@ -12,10 +12,11 @@ function Question(theQuestion, theSolution, theCommand) {
     this.currentState   = this.incorrectState;
 
 }
+// Getter 
 Question.prototype.getTheQuestion = function () {
     return this.theQuestion;
 };
-
+// Getter 
 Question.prototype.getTheSolution = function () {
     return this.theSolution;
 };
