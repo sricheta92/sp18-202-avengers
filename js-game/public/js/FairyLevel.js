@@ -1,11 +1,16 @@
 Game.FairyLevel = function(game){
     console.log("Level2 constructor");
 
+    // score count
+    this.count = 0;
+    // end score count
     this.rocks = null;
     this.player = null;
     this.map = null;
     this.factory = new GamePartsFactory(this);
     this.compositeController = new CompositeController(this);
+    this.fireballs = null;
+    this.scoreText = null;
 
 };
 
@@ -31,6 +36,10 @@ Game.FairyLevel.prototype = {
         this.player.body.collideWorldBounds = true ;
 
         this.rocks = this.factory.create("rocks");
+        this.fireballs = this.factory.create("fireballs");
+
+        this.fireballs.x = 0;
+        this.fireballs.y = 0;
 
         this.rocks.x = 0;
         this.rocks.y = 0;
@@ -40,7 +49,7 @@ Game.FairyLevel.prototype = {
 
             if(right.isDown){
                 if(game.player.y < 680)
-                    game.player.x += 1;
+                    game.player.x += 5;
             }
         }));
 
@@ -49,12 +58,57 @@ Game.FairyLevel.prototype = {
 
             if(left.isDown){
                 if(game.player.x > 0)
-                    game.player.x -= 1;
+                    game.player.x -= 5;
+            }
+        }));
+
+        this.compositeController.add(new Command(this, function (game) {
+            var space = game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
+
+            if(space.isDown){
+
+                var fireball = game.factory.createFireball(game.fireballs);
+
+                if(fireball) {
+                    fireball.reset(game.player.x, game.player.y);
+                    fireball.body.velocity.y = -200;
+                }
             }
         }));
 
 
+        this.scoreText = this.add.text(50,0,'Score:' + this.count , {font : '32px Arial' , fill : '#fff'});
+
+        this.scoreText.visible = true;
+
     },
+
+    collisionHandler : function(fireball , rocks){
+        console.log('Collision handler called ');
+        fireball.kill();
+        rocks.kill() ;
+        this.count ++ ;
+        console.log("Score " , this.count ) ;
+        this.scoreText.text = 'Score:' + this.count;
+
+        if(this.count === 20){
+            // winner
+
+        }
+    },
+
+    collisionHandlerForPlayer : function(player , rocks){
+        console.log("hit!");
+        // Reset
+        this.count = 0;
+        this.scoreText.text = 'Score:' + this.count;
+        rocks.kill();
+        this.player.x = 0;
+
+        this.rocks.removeAll();
+
+    },
+
 
     update: function () {
 
@@ -69,6 +123,11 @@ Game.FairyLevel.prototype = {
                 rock.destroy();
             }
         });
+
+
+        this.physics.arcade.collide(this.player , this.rocks, this.collisionHandlerForPlayer , null , this) ;
+
+        this.physics.arcade.collide(this.fireballs , this.rocks, this.collisionHandler, null, this);
     }
 
 
