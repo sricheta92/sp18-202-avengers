@@ -247,35 +247,32 @@ Game.Level1.prototype = {
 		var enemy = this.factory.createEnemy(this.enemies);
 		var enemy2 = this.factory.createEnemy(this.enemies);
 		var enemy3 = this.factory.createEnemy(this.enemies2);
-		var enemy4 = this.factory.createEnemy(this.enemies2);
-		var enemy5 = this.factory.createEnemy(this.enemies3);
-		var enemy6 = this.factory.createEnemy(this.enemies3);
-		var enemy7 = this.factory.createEnemy(this.enemies4);
-		var enemy8 = this.factory.createEnemy(this.enemies4);
+		// var enemy4 = this.factory.createEnemy(this.enemies2);
+		// var enemy5 = this.factory.createEnemy(this.enemies3);
+		// var enemy6 = this.factory.createEnemy(this.enemies3);
+		// var enemy7 = this.factory.createEnemy(this.enemies4);
+		// var enemy8 = this.factory.createEnemy(this.enemies4);
 
 
 
-
-
-
-		var tween2 = this.add.tween(enemy2).to({x : 200 } , 2000 , Phaser.Easing.Linear.None, true , 0 , 1000, true);
+		var tween2 = this.add.tween(enemy2).to({x : 0, y:200 } , 1000 , Phaser.Easing.Linear.None, true , 0 , 1000, true);
 		tween2.onLoop.add(this.descend , this);
-		var tween4 = this.add.tween(enemy4).to({x : 200 } , 2000 , Phaser.Easing.Linear.None, true , 0 , 1000, true);
-		tween4.onLoop.add(this.descend , this);
-		var tween6 = this.add.tween(enemy6).to({x : 200 } , 2000 , Phaser.Easing.Linear.None, true , 0 , 1000, true);
-		tween6.onLoop.add(this.descend , this);
-		var tween8 = this.add.tween(enemy8).to({x : 200 } , 2000 , Phaser.Easing.Linear.None, true , 0 , 1000, true);
-		tween8.onLoop.add(this.descend , this);
+		// var tween4 = this.add.tween(enemy4).to({x : 500 } , 2000 , Phaser.Easing.Linear.None, true , 0 , 1000, true);
+		// tween4.onLoop.add(this.descend , this);
+		// var tween6 = this.add.tween(enemy6).to({x : 400 } , 2000 , Phaser.Easing.Linear.None, true , 0 , 1000, true);
+		// tween6.onLoop.add(this.descend , this);
+		// var tween8 = this.add.tween(enemy8).to({x : 200 } , 2000 , Phaser.Easing.Linear.None, true , 0 , 1000, true);
+		// tween8.onLoop.add(this.descend , this);
 
 
-		var tween = this.add.tween(enemy).to({y : 200 } , 2000 , Phaser.Easing.Linear.None, true , 0 , 1000, true);
+		var tween = this.add.tween(enemy).to({x : 100 } , 200 , Phaser.Easing.Linear.None, true , 0 , 1000, true);
 		tween.onLoop.add(this.descend , this);
-		var tween3 = this.add.tween(enemy3).to({y : 200 } , 2000 , Phaser.Easing.Linear.None, true , 0 , 1000, true);
+		var tween3 = this.add.tween(enemy3).to({y : 220 } , 800 , Phaser.Easing.Linear.None, true , 0 , 1000, true);
 		tween3.onLoop.add(this.descend , this);
-		var tween5 = this.add.tween(enemy5).to({y : 200 } , 2000 , Phaser.Easing.Linear.None, true , 0 , 1000, true);
-		tween5.onLoop.add(this.descend , this);
-		var tween7 = this.add.tween(enemy7).to({y : 200 } , 2000 , Phaser.Easing.Linear.None, true , 0 , 1000, true);
-		tween7.onLoop.add(this.descend , this);
+		// var tween5 = this.add.tween(enemy5).to({y : 600 } , 2000 , Phaser.Easing.Linear.None, true , 0 , 1000, true);
+		// tween5.onLoop.add(this.descend , this);
+		// var tween7 = this.add.tween(enemy7).to({y : 700 } , 2000 , Phaser.Easing.Linear.None, true , 0 , 1000, true);
+		// tween7.onLoop.add(this.descend , this);
 	},
 
 	descend : function(){

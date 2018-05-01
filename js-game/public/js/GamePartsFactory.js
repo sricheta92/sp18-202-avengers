@@ -6,6 +6,8 @@ function GamePartsFactory(level) {
 
     this.level = level ;
 
+    this.enemyCount = 0;
+
     console.log("Enemies Factory");
 }
 
@@ -18,7 +20,6 @@ GamePartsFactory.prototype.create = function (input) {
     if (input === "enemies"){
         console.log("create enemies");
         object = this.level.add.group();
-
         object.enableBody = true;
         object.physicsBodyType = Phaser.Physics.ARCADE;
     }
@@ -69,8 +70,17 @@ GamePartsFactory.prototype.createFireball = function (group) {
 };
 
 GamePartsFactory.prototype.createEnemy = function (enemiesGroup) {
-    var enemy = enemiesGroup.create(48, 50, 'enemy');
-    enemy.anchor.setTo(0.5,0.5);
+    var enemy = enemiesGroup.create(50, 50, 'enemy');
+    if(this.enemyCount == 0) {
+        enemy.anchor.setTo(1, -18); 
+    } else if(this.enemyCount == 1) {
+        enemy.anchor.setTo(-10, -10);
+    } else if(this.enemyCount == 2) {
+        enemy.anchor.setTo(-15, -8);
+    } else {
+        enemy.anchor.setTo(0.1, 0.1);        
+    }
+    this.enemyCount += 1;
     enemy.scale.set(0.1,0.1);
     return enemy;
 };
