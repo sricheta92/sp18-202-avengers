@@ -233,6 +233,11 @@ No.
 * What I will do today - I will implement decorator pattern
 * Blocker - No blocker as of now.
 
+#### Prateek 
+* What I did yesterday -  Started learning about phaser js games and started coding
+* What I will do today - More coding
+* Blocker - No blocker as of now.
+
 # Day 9 - 15th April
 
 #### Sricheta 
