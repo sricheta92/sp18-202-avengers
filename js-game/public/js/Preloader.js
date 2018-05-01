@@ -35,6 +35,7 @@ Game.Preloader.prototype = {
         //Load fairy background - Huy Vo
         this.load.image('fairy_bg', "../assets/fairy/background.png");
         this.load.image('rock', "../assets/fairy/rock.png");
+        this.load.image('fireball', '../assets/fireball.png');
 
 	},
 

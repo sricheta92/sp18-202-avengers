@@ -2,6 +2,8 @@ function GamePartsFactory(level) {
 
     this.diff = null;
 
+    this.firstDiff = null;
+
     this.level = level ;
 
     console.log("Enemies Factory");
@@ -38,7 +40,32 @@ GamePartsFactory.prototype.create = function (input) {
         object.physicsBodyType = Phaser.Physics.ARCADE;
     }
 
+    if( input === "fireballs"){
+        object = this.level.add.group();
+        object.enableBody = true;
+        object.physicsBodyType = Phaser.Physics.ARCADE;
+
+    }
+
     return object;
+};
+
+GamePartsFactory.prototype.createFireball = function (group) {
+    if(this.firstDiff === null){
+        this.firstDiff = 0;
+    }
+
+    if(!( Date.now() - this.firstDiff >= 1000 )){
+        return null;
+    }
+
+    this.firstDiff = Date.now();
+
+    var fireball = group.create(48, 50, 'fireball');
+    fireball.anchor.setTo(0.5,0.5);
+    fireball.scale.set(0.1/2,0.1/2);
+
+    return fireball;
 };
 
 GamePartsFactory.prototype.createEnemy = function (enemiesGroup) {
@@ -79,5 +106,6 @@ GamePartsFactory.prototype.createRock = function (group) {
     rock.anchor.setTo(.05, .5);
 
     rock.scale.set(0.1/2,0.1/2);
+    rock.body.velocity.y = 50 ;
     return rock;
 };
