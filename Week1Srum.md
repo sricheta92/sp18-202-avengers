@@ -238,12 +238,22 @@ No.
 * What I will do today - More coding
 * Blocker - No blocker as of now.
 
+#### Huy Vo
+* What I did yesterday -  Started learning about phaser js games and started coding
+* What I will do today - Starting to code levels
+* Blocker - No blocker as of now.
+
 # Day 9 - 15th April
 
 #### Sricheta 
 * What I did yesterday -  I wrote psudeo code of decorator pattern
 * What I will do today - I will read about Phaser JS
 * Blocker - getting acquainted with Phaser JS
+
+#### Huy Vo
+* What I did yesterday -  Started learning about phaser js games and started coding
+* What I will do today - Assets and learned PhaseJS api
+* Blocker - No
 
 # Day 10 - 16th April
 
@@ -252,9 +262,17 @@ No.
 * What I will do today - started implementing decorator Pattern in the game in JS
 * Blocker - no blocker
 
+* What I did yesterday -  I read about design patterns
+* What I will do today - implementing command pattern + composite
+* Blocker - no blocker
+
 # Day 11 - 17th April
 
 #### Sricheta 
 * What I did yesterday -  started implementing decorator Pattern in the game in JS
 * What I will do today - comtinue with the same
 * Blocker - waiting for input from one of the team member
+
+* What I did yesterday -  I read about design patterns
+* What I will do today - implementing factory design pattern in JS
+* Blocker - no blocker
