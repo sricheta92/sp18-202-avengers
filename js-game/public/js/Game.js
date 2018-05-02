@@ -37,5 +37,4 @@ GameProxy.prototype.start = function (name) {
 	 }
 }
 
-var game = new GameProxy();
-game.onStart();
+ 
