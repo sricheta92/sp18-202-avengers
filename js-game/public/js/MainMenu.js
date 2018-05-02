@@ -26,7 +26,6 @@ Game.MainMenu.prototype = {
 
 	start: function() {
 		//this.state.start('Level1') ;
-
-        this.state.start('FairyLevel');
+        this.state.start('Level1');
 	}
 }; 

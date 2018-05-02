@@ -14,9 +14,10 @@ Game.Level1 = function(game){
     this.score = 0 ;
     this.scoreText = null ;
     this.winText = null;
+    this.loseText = null;
     this.factory = new GamePartsFactory(this);
     this.compositeController = new CompositeController(this);
-
+    this.bombs = 10;
 };
 
 
@@ -33,8 +34,8 @@ Game.Level1.prototype = {
 	create : function(){
 		
 		this.add.tileSprite(0, 0, 640, 640, 'background');
-		this.map = this.add.tilemap('map');
-		this.map.addTilesetImage('tileset');
+		//this.map = this.add.tilemap('map');
+		//this.map.addTilesetImage('tileset');
 
 
 		this.player = this.add.sprite(75 , 800 , 'player');
@@ -56,15 +57,15 @@ Game.Level1.prototype = {
 	    this.createEnemies();
 		
 
-		this.layer = this.map.createLayer(0);
-		this.layer.resizeWorld();
+		// this.layer = this.map.createLayer(0);
+		// this.layer.resizeWorld();
 
 		
-		this.map.setCollisionBetween(0 , 500);
-		this.map.setCollision([155,135] , false) ;
+		// this.map.setCollisionBetween(0 , 500);
+		// this.map.setCollision([155,135] , false) ;
 
-		this.map.setTileIndexCallback(0 , this.resetPlayer , this );
-		this.map.setTileIndexCallback(2 , this.getCoin , this );
+		// this.map.setTileIndexCallback(0 , this.resetPlayer , this );
+		// this.map.setTileIndexCallback(2 , this.getCoin , this );
 		
 
 
@@ -72,10 +73,10 @@ Game.Level1.prototype = {
 		    var right = game.input.keyboard.addKey(Phaser.Keyboard.D);
 
 		    if(right.isDown){
-
                 game.player.animations.play('run');
                 game.player.scale.setTo(1,1);
                 game.player.body.velocity.x += game.playerSpeed ;
+                setTimeout(function(){ game.player.animations.play('idle'); }, 300);
             }
         }));
 
@@ -86,6 +87,7 @@ Game.Level1.prototype = {
                 game.player.animations.play('run');
                 game.player.scale.setTo(-1,1);
                 game.player.body.velocity.x -= game.playerSpeed ;
+                setTimeout(function(){ game.player.animations.play('idle'); }, 300);
             }
         }));
 
@@ -98,6 +100,7 @@ Game.Level1.prototype = {
                 game.player.animations.play('run');
                 game.player.scale.setTo(1,1);
                 game.player.body.velocity.y -= game.playerSpeed ;
+                setTimeout(function(){ game.player.animations.play('idle'); }, 300);
             }
 
         }));
@@ -105,11 +108,12 @@ Game.Level1.prototype = {
 
         this.compositeController.add(new Command(this, function (game) {
             var down = game.input.keyboard.addKey(Phaser.Keyboard.S);
-
             if(down.isDown){
+            	game.bombs -= 1;
                 game.player.animations.play('run');
                 game.player.scale.setTo(-1,1);
                 game.player.body.velocity.y += game.playerSpeed ;
+                setTimeout(function(){ game.player.animations.play('idle'); }, 300);
             }
 
         }));
@@ -117,13 +121,12 @@ Game.Level1.prototype = {
 
         this.compositeController.add(new Command(this, function (game) {
             var fireButtonI = game.input.keyboard.addKey(Phaser.Keyboard.I);
-
-
             if(fireButtonI.isDown){
                 if(game.time.now > game.bombTime){
                 	var bomb = game.factory.createBomb(game.bomb);
 
                     if(bomb){
+                    	game.bombs -= 1;
                         bomb.reset(game.player.x , game.player.y);
                         bomb.body.velocity.y = -200 ;
                         game.bombTime = game.time.now + 1000 ;
@@ -143,6 +146,7 @@ Game.Level1.prototype = {
                 	var bomb = game.factory.createBomb(game.bomb);
 
                     if(bomb){
+                    	game.bombs -= 1;
                         bomb.reset(game.player.x , game.player.y);
                         bomb.body.velocity.x = -200 ;
                         game.bombTime = game.time.now + 1000 ;
@@ -161,6 +165,7 @@ Game.Level1.prototype = {
                 	var bomb = game.factory.createBomb(game.bomb);
 
                     if(bomb){
+                    	game.bombs -= 1;
                         bomb.reset(game.player.x , game.player.y);
                         bomb.body.velocity.y = +200 ;
                         game.bombTime = game.time.now + 1000 ;
@@ -176,8 +181,8 @@ Game.Level1.prototype = {
             if(fireButtonL.isDown){
                 if(game.time.now > game.bombTime){
                 	var bomb = game.factory.createBomb(game.bomb);
-
                     if(bomb){
+                    	game.bombs -= 1;
                         bomb.reset(game.player.x , game.player.y);
                         bomb.body.velocity.x = +200 ;
                         game.bombTime = game.time.now + 1000 ;
@@ -191,14 +196,24 @@ Game.Level1.prototype = {
         this.compositeController.add(new Command(this, function (game) {
             game.scoreText.text = 'Score : ' + this.score ;
 
-            if(game.score === 8){
+            if(game.score === 5){
                 game.winText.visible = true ;
                 game.scoreText.visible = false ;
             }
         }));
 
+        this.compositeController.add(new Command(this, function (game) {
+            if(game.bombs === 0){
+                game.loseText.visible = true ;
+                game.killEnemies(); 
+            }
+        }));
+
 		this.winText = this.add.text(this.world.centerX , this.world.centerY , 'You Win!',  {font : '32px Arial' , fill : '#fff'} ) ;
 		this.winText.visible = false ;
+
+		this.loseText = this.add.text(this.world.centerX , this.world.centerY , 'You Lose!',  {font : '32px Arial' , fill : '#fff'} ) ;
+		this.loseText.visible = false ;
 
 	},
 
@@ -247,8 +262,8 @@ Game.Level1.prototype = {
 		var enemy = this.factory.createEnemy(this.enemies);
 		var enemy2 = this.factory.createEnemy(this.enemies);
 		var enemy3 = this.factory.createEnemy(this.enemies2);
-		// var enemy4 = this.factory.createEnemy(this.enemies2);
-		// var enemy5 = this.factory.createEnemy(this.enemies3);
+		var enemy4 = this.factory.createEnemy(this.enemies2);
+		var enemy5 = this.factory.createEnemy(this.enemies3);
 		// var enemy6 = this.factory.createEnemy(this.enemies3);
 		// var enemy7 = this.factory.createEnemy(this.enemies4);
 		// var enemy8 = this.factory.createEnemy(this.enemies4);
@@ -257,19 +272,18 @@ Game.Level1.prototype = {
 
 		var tween2 = this.add.tween(enemy2).to({x : 0, y:200 } , 1000 , Phaser.Easing.Linear.None, true , 0 , 1000, true);
 		tween2.onLoop.add(this.descend , this);
-		// var tween4 = this.add.tween(enemy4).to({x : 500 } , 2000 , Phaser.Easing.Linear.None, true , 0 , 1000, true);
-		// tween4.onLoop.add(this.descend , this);
+		var tween4 = this.add.tween(enemy4).to({x : 300, y: 150 } , 2000 , Phaser.Easing.Linear.None, true , 0 , 1000, true);
+		tween4.onLoop.add(this.descend , this);
 		// var tween6 = this.add.tween(enemy6).to({x : 400 } , 2000 , Phaser.Easing.Linear.None, true , 0 , 1000, true);
 		// tween6.onLoop.add(this.descend , this);
 		// var tween8 = this.add.tween(enemy8).to({x : 200 } , 2000 , Phaser.Easing.Linear.None, true , 0 , 1000, true);
 		// tween8.onLoop.add(this.descend , this);
 
-
 		var tween = this.add.tween(enemy).to({x : 100 } , 200 , Phaser.Easing.Linear.None, true , 0 , 1000, true);
 		tween.onLoop.add(this.descend , this);
 		var tween3 = this.add.tween(enemy3).to({y : 220 } , 800 , Phaser.Easing.Linear.None, true , 0 , 1000, true);
 		tween3.onLoop.add(this.descend , this);
-		// var tween5 = this.add.tween(enemy5).to({y : 600 } , 2000 , Phaser.Easing.Linear.None, true , 0 , 1000, true);
+		var tween5 = this.add.tween(enemy5).to({x: 10, y : 600 } , 2000 , Phaser.Easing.Linear.None, true , 0 , 1000, true);
 		// tween5.onLoop.add(this.descend , this);
 		// var tween7 = this.add.tween(enemy7).to({y : 700 } , 2000 , Phaser.Easing.Linear.None, true , 0 , 1000, true);
 		// tween7.onLoop.add(this.descend , this);
@@ -277,5 +291,12 @@ Game.Level1.prototype = {
 
 	descend : function(){
 		this.enemies.y =+ 10 ;
+	},
+
+	killEnemies : function () {
+		this.enemies.kill();
+		this.enemies2.kill();
+		this.enemies3.kill();
+		this.enemies4.kill();
 	}
 }; 
