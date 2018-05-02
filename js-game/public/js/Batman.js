@@ -1,4 +1,4 @@
-Game.Batman = function(game){
+Game.BatmanLevel = function(game){
 
     this.map = null ;
     this.layer = null;
@@ -24,7 +24,7 @@ Game.Batman = function(game){
 
 
 
-Game.Batman.prototype = {
+Game.BatmanLevel.prototype = {
 	preload : function(){
 		//Load Enemy
 		this.load.image('enemy','../assets/enemynew.png');
