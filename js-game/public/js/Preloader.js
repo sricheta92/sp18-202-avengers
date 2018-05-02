@@ -28,7 +28,8 @@ Game.Preloader.prototype = {
 		this.load.image('enemy','../assets/enemy.jpg');
 		this.load.image('enemyBullet','../assets/Bullet.jpg');
 
-        this.load.image("background", "../assets/Aman/Town_Background.png");
+        //this.load.image("background", "../assets/Aman/Town_Background.png");
+        this.load.image("background", "../assets/batman.jpg");
         this.load.image('start','../assets/start.jpg');
 		// this.load.image("background", "../assets/Aman/Town_Background.png");
 
