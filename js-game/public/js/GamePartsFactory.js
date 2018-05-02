@@ -69,13 +69,15 @@ GamePartsFactory.prototype.createFireball = function (group) {
 GamePartsFactory.prototype.createEnemy = function (enemiesGroup) {
     var enemy = enemiesGroup.create(50, 50, 'enemy');
     if(this.enemyCount == 0) {
-        enemy.anchor.setTo(1, -18); 
+        enemy.anchor.setTo(-4, -18); 
     } else if(this.enemyCount == 1) {
         enemy.anchor.setTo(-10, -10);
     } else if(this.enemyCount == 2) {
         enemy.anchor.setTo(-15, -8);
     } else if(this.enemyCount == 3) {
         enemy.anchor.setTo(-10, 1.5);
+    } else if(this.enemyCount == 4) {
+        enemy.anchor.setTo(-3, 1);
     } else {
         enemy.anchor.setTo(-12,1.5);
     }

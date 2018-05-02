@@ -34,8 +34,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Level1.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/Level1.js">
+      <file leaf-file-name="Batman.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/Batman.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-13">
               <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
@@ -133,7 +133,7 @@
         <option value="$PROJECT_DIR$/public/JS/Boot.js" />
         <option value="$PROJECT_DIR$/public/JS/index.js" />
         <option value="$PROJECT_DIR$/public/JS/Preloader.js" />
-        <option value="$PROJECT_DIR$/public/JS/Level1.js" />
+        <option value="$PROJECT_DIR$/public/JS/Batman.js" />
         <option value="$PROJECT_DIR$/public/JS/MainMenu.js" />
         <option value="$PROJECT_DIR$/public/js/index.js" />
         <option value="$PROJECT_DIR$/public/js/Boot.js" />
@@ -149,7 +149,7 @@
         <option value="$PROJECT_DIR$/public/js/MainMenu.js" />
         <option value="$PROJECT_DIR$/public/js/Preloader.js" />
         <option value="$PROJECT_DIR$/public/js/FairyLevel.js" />
-        <option value="$PROJECT_DIR$/public/js/Level1.js" />
+        <option value="$PROJECT_DIR$/public/js/Batman.js" />
         <option value="$PROJECT_DIR$/public/js/MenuHelperStrategy.js" />
         <option value="$PROJECT_DIR$/public/js/Questions.js" />
         <option value="$PROJECT_DIR$/public/js/Game.js" />
@@ -342,7 +342,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/Level1.js">
+    <entry file="file://$PROJECT_DIR$/public/js/Batman.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="26" column="54" lean-forward="true" selection-start-line="26" selection-start-column="54" selection-end-line="26" selection-end-column="54" />
@@ -589,7 +589,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/Level1.js">
+    <entry file="file://$PROJECT_DIR$/public/js/Batman.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-13">
           <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />

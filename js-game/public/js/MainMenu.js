@@ -25,7 +25,7 @@ Game.MainMenu.prototype = {
 	},
 
 	start: function() {
-		//this.state.start('Level1') ;
-        this.state.start('Level1');
+		//this.state.start('Batman') ;
+        this.state.start('Batman');
 	}
 }; 

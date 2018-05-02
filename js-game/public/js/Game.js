@@ -6,14 +6,14 @@ function GameProxy() {
 
 	this.game = new Phaser.Game(640	,640 , Phaser.CANVAS , '');
 
-	this.authenticated = false;
+	this.authenticated = true;
 
 	this.game.state.add('Boot', Game.Boot);
 	this.game.state.add('Preloader', Game.Preloader);
 	this.game.state.add('MainMenu', Game.MainMenu);
 	// Load levels
 
-	this.game.state.add('Level1', Game.Level1);
+	this.game.state.add('Batman', Game.Batman);
 	this.game.state.add('FairyLevel', Game.FairyLevel);
 
 
