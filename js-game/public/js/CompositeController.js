@@ -18,3 +18,21 @@ CompositeController.prototype.update = function () {
         this.children[i].update(); // execute
     }
 };
+
+CompositeController.prototype.getChild = function (i) {
+	return this.children[i]; 
+};
+
+CompositeController.prototype.hasChildren = function () {
+	return this.children.length > 0; 
+}; 
+
+CompositeController.prototype.remove = function (child) {
+    var length = this.children.length;
+    for (var i = 0; i < length; i++) {
+        if (this.children[i] === child) {
+            this.children.splice(i, 1);
+            return;
+        }
+    }
+};
