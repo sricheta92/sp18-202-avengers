@@ -260,6 +260,11 @@ No.
 * What I will do today - Assets and learned PhaseJS api
 * Blocker - No
 
+#### Mangesh Tak
+* What I did yesterday -  Started with basic Phaser JS
+* What I will do today - Developing levels
+* Blocker - No
+
 # Day 10 - 16th April
 
 #### Sricheta 
