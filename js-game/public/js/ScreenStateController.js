@@ -1,6 +1,6 @@
 function ScreenStateController(game) {
     this.game = game;
-    this.currentState = "MainMenu";
+    this.currentState = "BeforeStart";
 }
 
 
@@ -16,9 +16,19 @@ ScreenStateController.prototype.next = function (game) {
 		this.setState("FairyLevel");
 	}
 
+	else if(this.currentState === "BeforeStart") {
+		game.state.start("MainMenu")
+		this.setState("MainMenu");
+	}
+
 	else if(this.currentState === "FairyLevel") {
 		game.state.start("Batman")
 		this.setState("Batman");
+	}
+
+	else if(this.currentState === "Batman") {
+		game.state.start("Queen")
+		this.setState("Queen");
 	}
 };
 

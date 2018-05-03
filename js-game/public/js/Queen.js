@@ -1,4 +1,4 @@
-Game.bridge = function(game){
+Game.Queen = function(game){
 
     this.player = null ;
     this.queen = null ;
@@ -7,10 +7,11 @@ Game.bridge = function(game){
     this.playerSpeed = 50 ;
     this.compositeController = new CompositeController(this);
     this.factory = new GamePartsFactory(this);
+    this.winText = "";
 
 };
 
-Game.bridge.prototype = {
+Game.Queen.prototype = {
 
     preload : function(){
         
@@ -55,6 +56,9 @@ Game.bridge.prototype = {
         this.rock1.body.velocity.setTo(150,150);
         this.rock1.body.collideWorldBounds = true;
         this.rock1.body.bounce.set(1);
+
+        this.winText = this.add.text(this.world.centerX , this.world.centerY , 'You Win!',  {font : '32px Arial' , fill : '#fff'} ) ;
+        this.winText.visible = false ;
 
         this.compositeController.add(new Command(this, function (game) {
             var right = game.input.keyboard.addKey(Phaser.Keyboard.D);
@@ -101,7 +105,6 @@ Game.bridge.prototype = {
     },
 
     update : function(){
-
           this.physics.arcade.collide(this.player, this.rock1, this.killplayer, null, this);
           this.physics.arcade.collide(this.player, this.rock1, this.killplayer, null, this);
           this.physics.arcade.collide(this.player, this.queen, this.killrock, null, this);
@@ -116,5 +119,6 @@ Game.bridge.prototype = {
     killrock : function(){
         this.rock.kill();
         this.rock1.kill();
+        this.winText.visible = true;
     }
 }
