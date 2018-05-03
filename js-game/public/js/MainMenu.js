@@ -1,6 +1,5 @@
 Game.MainMenu = function(game){
-    console.log("constructor");
-
+    this.game = game;
 };
 
 var controls  = {} ;
@@ -25,7 +24,6 @@ Game.MainMenu.prototype = {
 	},
 
 	start: function() {
-		//this.state.start('Batman') ;
-        this.state.start('Batman');
+		this.game.screenStateController.next("MainMenu", this.game);
 	}
 }; 
