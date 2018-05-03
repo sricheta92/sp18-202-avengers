@@ -276,6 +276,11 @@ No.
 * What I will do today - implementing command pattern + composite
 * Blocker - no blocker
 
+#### Mangesh Tak
+* What I did yesterday -  Larened about proxy design pattern
+* What I will do today - Developing levels
+* Blocker - No
+
 # Day 11 - 17th April
 
 #### Sricheta 
