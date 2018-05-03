@@ -38,6 +38,9 @@ Game.Preloader.prototype = {
         this.load.image('rock', "../assets/fairy/rock.png");
         this.load.image('fireball', '../assets/fireball.png');
 
+        // Load images for level3 - Mangesh Tak
+        this.load.image('background_3', "../assets/BackLevel3.jpg");
+
 	},
 
 	create : function(){
