@@ -24,6 +24,6 @@ Game.MainMenu.prototype = {
 	},
 
 	start: function() {
-		this.game.screenStateController.next("MainMenu", this.game);
+		this.game.screenStateController.next(this.game);
 	}
 }; 

@@ -1,6 +1,6 @@
 function ScreenStateController(game) {
     this.game = game;
-    this.state = "MainMenu";
+    this.currentState = "MainMenu";
 }
 
 
@@ -10,12 +10,18 @@ ScreenStateController.prototype.getState = function () {
 };
 
 
-ScreenStateController.prototype.next = function (currentState, game) {
-	if(currentState === "MainMenu") {
+ScreenStateController.prototype.next = function (game) {
+	if(this.currentState === "MainMenu") {
 		game.state.start("FairyLevel")
+		this.setState("FairyLevel");
 	}
 
-	if(currentState === "FairyLevel") {
+	else if(this.currentState === "FairyLevel") {
 		game.state.start("Batman")
+		this.setState("Batman");
 	}
+};
+
+ScreenStateController.prototype.setState = function (newState) {
+	this.currentState = newState;
 };
