@@ -14,6 +14,7 @@ function GameProxy() {
 	// Load levels
 
 	this.game.state.add('Batman', Game.Batman);
+	this.game.state.add('bridge', Game.bridge);
 	this.game.state.add('FairyLevel', Game.FairyLevel);
 
 
