@@ -1,19 +1,19 @@
-Game.Level1 = function(editor) {
+Game.Batman = function(editor) {
   this._editor = editor;
   this.showTutorial = true;
 };
 
-Game.Level1.prototype = {
+Game.Batman.prototype = {
   init: function() {
     this.physics.startSystem(Phaser.Physics.ARCADE);
     this._enemyFactory = new EnemyFactory(this.game);
   },
 
   create: function() {
-    this.add.tileSprite(0, 0, Game.WIDTH, Game.HEIGHT, Game.level1.TILESPRITE_KEY);
+    this.add.tileSprite(0, 0, Game.WIDTH, Game.HEIGHT, Game.Batman.TILESPRITE_KEY);
 
-    const tilemap = this.add.tilemap(Game.level1.TILEMAP_KEY);
-    tilemap.addTilesetImage(Game.level1.TILESET_IMAGE_KEY);
+    const tilemap = this.add.tilemap(Game.Batman.TILEMAP_KEY);
+    tilemap.addTilesetImage(Game.Batman.TILESET_IMAGE_KEY);
     tilemap.setCollisionBetween(0, 500);
     tilemap.setCollision([149, 150], false);
 
