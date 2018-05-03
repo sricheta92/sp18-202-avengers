@@ -37,8 +37,6 @@ Game.BatmanLevel.prototype = {
 		this.add.tileSprite(0, 0, 640, 640, 'background');
 		//this.map = this.add.tilemap('map');
 		//this.map.addTilesetImage('tileset');
-
-
 		this.player = this.add.sprite(75 , 800 , 'player');
 		this.player.anchor.setTo(0.5,0.5);
 		this.player.animations.add('idle' , [0,1] , 1 , true);
