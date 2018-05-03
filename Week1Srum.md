@@ -277,7 +277,7 @@ No.
 * Blocker - no blocker
 
 #### Mangesh Tak
-* What I did yesterday -  Larened about proxy design pattern
+* What I did yesterday -  Learened about proxy design pattern
 * What I will do today - Developing levels
 * Blocker - No
 
@@ -291,3 +291,8 @@ No.
 * What I did yesterday -  I read about design patterns
 * What I will do today - implementing factory design pattern in JS
 * Blocker - no blocker
+
+#### Mangesh Tak
+* What I did yesterday -  Learned about implementing state pattern
+* What I will do today - Implemented proxy pattern
+* Blocker - No
