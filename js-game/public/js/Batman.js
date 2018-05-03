@@ -17,7 +17,7 @@ Game.BatmanLevel = function(game){
     this.winText = null;
     this.loseText = null;
     this.factory = new GamePartsFactory(this);
-    this.compositeController = new CompositeController(this);
+    this.compositeController = new CompositeController();
     this.bombs = 15;
 };
 

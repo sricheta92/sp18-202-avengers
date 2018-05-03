@@ -3,10 +3,8 @@
  * @author: Huy Vo
  * @description: Composite Design Pattern
  */
-function CompositeController(game) {
+function CompositeController() {
     console.log("composite controller constructor");
-    this.game = game;
-
     this.children = [];
 }
 

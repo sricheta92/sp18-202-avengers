@@ -7,7 +7,7 @@ Game.QueenLevel = function(game){
     this.rock2 = null ;
     this.rock3 = null ;
     this.playerSpeed = 150 ;
-    this.compositeController = new CompositeController(this);
+    this.compositeController = new CompositeController();
     this.factory = new GamePartsFactory(this);
     this.winText = "";
 

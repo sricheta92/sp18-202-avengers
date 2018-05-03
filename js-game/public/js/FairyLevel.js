@@ -6,7 +6,7 @@ Game.FairyLevel = function(game){
     this.player = null;
     this.map = null;
     this.factory = new GamePartsFactory(this);
-    this.compositeController = new CompositeController(this);
+    this.compositeController = new CompositeController();
     this.fireballs = null;
     this.scoreText = null;
 };
