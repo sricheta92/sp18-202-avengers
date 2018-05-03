@@ -1,4 +1,4 @@
-Game.Queen = function(game){
+Game.QueenLevel = function(game){
 
     this.player = null ;
     this.queen = null ;
@@ -13,7 +13,7 @@ Game.Queen = function(game){
 
 };
 
-Game.Queen.prototype = {
+Game.QueenLevel.prototype = {
 
     preload : function(){
         
