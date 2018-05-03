@@ -10,3 +10,9 @@ Scope is important for us.
 ## Week 2
 
 * When we finally decided to build the game on Phaser JS, all the team members wanted to add many cool features in the game. But we thought of the timeline. We decided not to add too much complexity and build it simple and the best.
+
+## Week 3
+
+*  We deployed the code on heroku. We comleted all the requirement of the hackathon project.
+* We started with test harness to make our code unbreakable.
+
