@@ -13,6 +13,7 @@ function GameProxy() {
 	this.game.state.add('MainMenu', Game.MainMenu);
 	// Load levels
 
+	this.game.state.add('Queen', Game.Queen);
 	this.game.state.add('Batman', Game.BatmanLevel);
 	this.game.state.add('FairyLevel', Game.FairyLevel);
 

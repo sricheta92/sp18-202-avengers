@@ -189,8 +189,7 @@ Game.BatmanLevel.prototype = {
             game.scoreText.text = 'Score : ' + game.score ;
 
             if(game.score === 6){
-                game.winText.visible = true ;
-                game.scoreText.visible = false ;
+                game.game.screenStateController.next(game.game);
             }
         }));
 

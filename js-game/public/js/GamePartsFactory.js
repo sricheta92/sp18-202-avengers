@@ -46,6 +46,24 @@ GamePartsFactory.prototype.create = function (input) {
         object.enableBody = true;
         object.physicsBodyType = Phaser.Physics.ARCADE;
     }
+
+    if( input === "rock"){
+        object = this.level.add.group();
+        object.enableBody = true;
+        object.physicsBodyType = Phaser.Physics.ARCADE;
+
+
+        object.anchor.setTo(0.5,0.5);
+        object.scale.setTo(0.3,0.3);
+        object.alpha = 0;
+        object.tween(this.rock).to( { alpha: 1 }, 2000, Phaser.Easing.Linear.None, true, 0, 1000, true);
+        object.enable(this.rock, Phaser.Physics.ARCADE);
+        object.body.velocity.setTo(300,300);
+        object.body.collideWorldBounds = true;
+        object.body.bounce.set(1);
+        
+    }
+
     return object;
 };
 

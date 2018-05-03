@@ -1,4 +1,4 @@
-Game.Level1 = function(game){
+Game.Batman = function(game){
 
 }
 
@@ -21,7 +21,7 @@ var scoreText ;
 var winText ; 
 
 
-Game.Level1.prototype = {
+Game.Batman.prototype = {
 	preload : function(){
 		//Load Enemy
 		this.load.image('enemy','../assets/enemy.jpg')
