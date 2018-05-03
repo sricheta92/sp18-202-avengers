@@ -1,6 +1,6 @@
 /**
- * author: Huy Vo
- * description: State Design pattern
+ * @author: Huy Vo
+ * @description: State Design pattern
  */
 function Question(theQuestion, theSolution, theCommand) {
     this.theQuestion = theQuestion;
@@ -37,15 +37,17 @@ Question.prototype.setCurrentState = function (state) {
         // move to next level
         console.log("correctState");
         this.currentState = this.correctState;
-        this.askIt();
+       
     }else{
         // refresh
 
         console.log("incorrectState")
         window.location.href = window.location.href;
         this.currentState = this.incorrectState;
-        this.askIt();
+        
     }
+
+    this.askIt();
 };
 
 Question.prototype.getIncorrectState = function () {

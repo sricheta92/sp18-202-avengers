@@ -1,6 +1,7 @@
 /**
  *
- * State Design Pattern
+ * @author: Huy Vo
+ * @description: Composite Design Pattern
  */
 function CompositeController(game) {
     console.log("composite controller constructor");

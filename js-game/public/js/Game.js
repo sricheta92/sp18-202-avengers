@@ -20,8 +20,7 @@ function GameProxy() {
 	this.game.screenStateController = new ScreenStateController();
     this.name = null;
 	this.theQuestion = new Question("type 123", "123", new Command(this, function (game) {
-//	    console.log(game.name);
-
+ 
 	    game.setAuthenticated(true);
 
 	    game.start(game.name);
