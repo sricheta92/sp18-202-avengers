@@ -272,6 +272,7 @@ No.
 * What I will do today - started implementing decorator Pattern in the game in JS
 * Blocker - no blocker
 
+#### Prateek
 * What I did yesterday -  I read about design patterns
 * What I will do today - implementing command pattern + composite
 * Blocker - no blocker
@@ -288,6 +289,7 @@ No.
 * What I will do today - comtinue with the same
 * Blocker - waiting for input from one of the team member
 
+#### Prateek 
 * What I did yesterday -  I read about design patterns
 * What I will do today - implementing factory design pattern in JS
 * Blocker - no blocker
@@ -295,4 +297,11 @@ No.
 #### Mangesh Tak
 * What I did yesterday -  Learned about implementing state pattern
 * What I will do today - Implemented proxy pattern
+* Blocker - No
+
+# Day 12 - 18th April
+
+#### Sricheta 
+* What I did yesterday -  started level 3
+* What I will do today - continue with level 3
 * Blocker - No
