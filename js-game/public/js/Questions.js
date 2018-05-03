@@ -32,15 +32,18 @@ Question.prototype.goToNextLevel = function () {
 };*/
 
 Question.prototype.setCurrentState = function (state) {
-    this.currentState = state;
 
-    if(this.currentState === "correctState"){
+    if(state === "correctState"){
         // move to next level
-        console.log("move to next level");
-        this.theCommand.execute();
+        console.log("correctState");
+        this.currentState = this.correctState;
+        this.askIt();
     }else{
         // refresh
+
+        console.log("incorrectState")
         window.location.href = window.location.href;
+        this.currentState = this.incorrectState;
         this.askIt();
     }
 };
@@ -68,7 +71,9 @@ IncorrectState.prototype.askIt = function () {
         return
     }
 
-    if(response === this.questionContext.getTheSolution()){
+    console.log("response = " + response);
+
+    if(response == this.questionContext.getTheSolution()){
         this.questionContext.setCurrentState("correctState");
     }else{
         this.questionContext.setCurrentState("incorrectState");
@@ -83,5 +88,5 @@ function CorrectState(questionContext) {
 }
 
 CorrectState.prototype.askIt = function () {
-    // do nothing
+    this.questionContext.theCommand.update();
 };
