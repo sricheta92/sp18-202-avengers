@@ -13,10 +13,11 @@ function GameProxy() {
 	this.game.state.add('MainMenu', Game.MainMenu);
 	// Load levels
 
-	this.game.state.add('Batman', Game.Batman);
 	this.game.state.add('bridge', Game.bridge);
+	this.game.state.add('Batman', Game.BatmanLevel);
 	this.game.state.add('FairyLevel', Game.FairyLevel);
 
+	this.game.screenStateController = new ScreenStateController();
 
 	this.theQuestion = new Question("type 123", "123", new Command(this, function () {
 	    game.authenticated = true;
