@@ -238,6 +238,11 @@ No.
 * What I will do today - More coding
 * Blocker - No blocker as of now.
 
+#### Mangesh
+* What I did yesterday -  Started reading official documentation of Phaser JS
+* What I will do today - More JavaSccript coding
+* Blocker - No blocker as of now.
+
 #### Huy Vo
 * What I did yesterday -  Started learning about phaser js games and started coding
 * What I will do today - Starting to code levels
