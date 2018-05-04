@@ -319,3 +319,25 @@ No.
 * What I did yesterday -  I did peer testing yesterday
 * What I will do today - I will fo unit testing tiday
 * Blocker - No
+
+# Day 15 - 21th April
+
+#### Sricheta 
+* What I did yesterday -  I did unit testing
+* What I will do today - I will do deployment
+* Blocker - No
+
+# Day 16 - 22nd April
+
+#### Sricheta 
+* What I did yesterday -  I did deployment today
+* What I will do today -  I will do coding today
+* Blocker - No
+
+# Day 17 - 23rd April
+
+#### Sricheta 
+* What I did yesterday -  I did deployment today
+* What I will do today - I will do testing today
+* Blocker - No
+
