@@ -199,7 +199,10 @@ Game.BatmanLevel.prototype = {
         this.compositeController.add(new Command(this, function (game) {
             if(game.bombs === 0){
                 game.loseText.visible = true ;
-                game.killEnemies(); 
+                game.killEnemies();
+                setTimeout(function(){ 
+                    location.reload();     
+                }, 3000);           
             }
         }));
 

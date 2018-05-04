@@ -5,7 +5,6 @@ function ScreenStateController(game) {
 
 
 ScreenStateController.prototype.getState = function () {
-	alert("this is called");
     return this.state;
 };
 
@@ -17,8 +16,8 @@ ScreenStateController.prototype.next = function (game) {
 	}
 
 	else if(this.currentState === "BeforeStart") {
-		game.state.start("MainMenu")
-		this.setState("MainMenu");
+		game.state.start("Queen")
+		this.setState("Queen");
 	}
 
 	else if(this.currentState === "FairyLevel") {
@@ -35,3 +34,4 @@ ScreenStateController.prototype.next = function (game) {
 ScreenStateController.prototype.setState = function (newState) {
 	this.currentState = newState;
 };
+

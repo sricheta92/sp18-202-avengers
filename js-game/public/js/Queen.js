@@ -71,6 +71,9 @@ Game.QueenLevel.prototype = {
         this.winText = this.add.text(this.world.centerX , this.world.centerY , 'You Win!',  {font : '32px Arial' , fill : '#fff'} ) ;
         this.winText.visible = false ;
 
+        this.loseText = this.add.text(this.world.centerX , this.world.centerY , 'You Lose!',  {font : '32px Arial' , fill : '#fff'} ) ;
+        this.loseText.visible = false ;
+
         this.compositeController.add(new Command(this, function (game) {
             var right = game.input.keyboard.addKey(Phaser.Keyboard.D);
 
@@ -128,6 +131,10 @@ Game.QueenLevel.prototype = {
 
     killplayer : function(){
         this.player.kill();
+        this.loseText.visible = true ;
+        setTimeout(function(){ 
+            location.reload();     
+        }, 3000); 
     },
 
     killrock : function(){
