@@ -431,11 +431,6 @@ No.
 * What I will do today - phasor JS study
 * Blocker - No
 
-#### Kalikalyan
-* What I did yesterday -  Coding practice in phasor JS
-* What I will do today - phasor JS study
-* Blocker - No
-
 #### Mangesh
 * What I did yesterday -  Level 3 implementation
 * What I will do today - I will study proxy pattern today
@@ -448,6 +443,12 @@ No.
 * What I will do today - I will fix bug today
 * Blocker - Bugs
 
+
+#### Kalikalyan
+* What I did yesterday -  Coding practice in phasor JS
+* What I will do today - phasor JS study
+* Blocker - No
+
 #### Mangesh
 * What I did yesterday -  Studied about proxy pattern
 * What I will do today - I will implement proxy pattern in level 3
@@ -458,6 +459,11 @@ No.
 #### Sricheta 
 * What I did yesterday -  I did bug fix today
 * What I will do today - I will do peer testing today
+* Blocker - No
+
+#### Kalikalyan
+* What I did yesterday -  level 2 phasor JS
+* What I will do today - tested level 3 once
 * Blocker - No
 
 #### Mangesh
@@ -477,6 +483,12 @@ No.
 * What I will do today - I will fix bugs in level 3
 * Blocker - No
 
+
+#### Kalikalyan
+* What I did yesterday -  Coding practice in phasor JS
+* What I will do today - Peer review
+* Blocker - No
+
 # Day 22 - 27th April
 
 #### Sricheta 
@@ -489,11 +501,22 @@ No.
 * What I will do today - I will strt testing level 1 designed by peer
 * Blocker - No
 
+#### Kalikalyan
+* What I did yesterday -  Peer review
+* What I will do today - testing level one along with another peer
+* Blocker - No
+
+
 # Day 23 - 28th April
 
 #### Sricheta 
 * What I did yesterday -  Level 1 testing
 * What I will do today - I will try to resolve bug from level 1
+* Blocker - No
+
+#### Kalikalyan
+* What I did yesterday -  Bug fixes
+* What I will do today - Bug fixes
 * Blocker - No
 
 
