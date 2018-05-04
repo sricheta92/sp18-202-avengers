@@ -170,6 +170,11 @@ No.
 * What I will do today - Apply design pattern. Write unit test cases.  
 * Blocker - No blocker as of now.
 
+#### Kalikalyan 
+* What I did yesterday - I worked on setup of levels of game.
+* What I will do today - Study of design patterns.  
+* Blocker - No blocker as of now.
+
 # Day 6 - 12th April
 
 #### Prateek 
