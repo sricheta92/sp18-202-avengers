@@ -390,6 +390,10 @@ No.
 * What I will do today - Test; Intergration 
 * Blocker - None 
 
+#### Prateek
+* What I did yesterday -  Implemented design
+* What I will do today -  Design implementation and integration
+* Blocker - None 
 
 # Day 14 - 20th April
 
@@ -412,6 +416,11 @@ No.
 #### Huy Vo
 * What I did yesterday -  Code 
 * What I will do today - Refining code to be more readable.
+* Blocker - None 
+
+#### Prateek
+* What I did yesterday -  COding practice of Phaser 
+* What I will do today - Code refine
 * Blocker - None 
 
 # Day 15 - 21th April
@@ -437,6 +446,11 @@ No.
 * What I will do today - Refining code to be more readable.
 * Blocker - None 
 
+#### Prateek
+* What I did yesterday -  Code implementation 
+* What I will do today - Code design improvement.
+* Blocker - None 
+
 # Day 16 - 22nd April
 
 #### Sricheta 
@@ -457,6 +471,11 @@ No.
 #### Huy Vo
 * What I did yesterday -  Finalizing image selections
 * What I will do today - Finalizing image selections
+* Blocker - None 
+
+#### Prateek
+* What I did yesterday -  Finalized maps and theme
+* What I will do today - Finalized structure of levels
 * Blocker - None 
 
 # Day 17 - 23rd April
@@ -482,6 +501,11 @@ No.
 * What I will do today - Finalizing image selections
 * Blocker - None 
 
+#### Prateek
+* What I did yesterday -  Implemented maps
+* What I will do today - Finalized players and bomb count
+* Blocker - None 
+
 # Day 18 - 24rd April
 
 #### Huy Vo
@@ -503,6 +527,11 @@ No.
 #### Mangesh
 * What I did yesterday -  Studied about proxy pattern
 * What I will do today - I will implement proxy pattern in level 3
+* Blocker - No blocks
+
+#### Prateek
+* What I did yesterday -  Proxy pattern
+* What I will do today - Implementation
 * Blocker - No blocks
 
 # Day 20 - 25th April
@@ -528,6 +557,11 @@ No.
 * What I will do today - I will test level 3 today
 * Blocker - No
 
+#### Prateek
+* What I did yesterday -  Level 3 phaser JS
+* What I will do today - Deployment to GIT
+* Blocker - No
+
 # Day 21 - 26th April
 
 #### Huy Vo
@@ -549,6 +583,11 @@ No.
 #### Kalikalyan
 * What I did yesterday -  Coding practice in phasor JS
 * What I will do today - Peer review
+* Blocker - No
+
+#### Prateek
+* What I did yesterday -  Coded Phaser
+* What I will do today - Review docs
 * Blocker - No
 
 # Day 22 - 27th April
