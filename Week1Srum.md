@@ -362,7 +362,7 @@ No.
 
 #### Kalikalyan
 * What I did yesterday -  Learned about implementing state design pattern
-* What I will do today - Designed structure of game
+* What I will do today - Design structure of game
 * Blocker - No
 
 
@@ -379,6 +379,12 @@ No.
 * What I will do today - Will do testing
 * Blocker - No
 
+
+#### Kalikalyan
+* What I did yesterday -  Coding practice in phasor JS
+* What I will do today - phasor JS study
+* Blocker - No
+
 # Day 15 - 21th April
 
 #### Sricheta 
@@ -390,6 +396,11 @@ No.
 * What I did yesterday -  Performed level testing
 * What I will do today - Designed maps for level 3
 * Blocker - No issues
+
+#### Kalikalyan
+* What I did yesterday -  Coding practice in phasor JS
+* What I will do today - phasor JS study
+* Blocker - No
 
 # Day 16 - 22nd April
 
