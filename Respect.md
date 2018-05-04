@@ -9,3 +9,19 @@
 
 * Understood different coding style of peers and respected their way of doign it.
 * Integrated each other'code effectively
+
+## Week 3
+
+* Divided different design patterns to team members.
+* Team had discussion about how to integrate all design patterns.
+* Team patiently listen to other team members.
+
+## Week 4
+
+* Team divided different modules among themselves like UI, Maps, Levels.
+* Team started developing different modules.
+
+## Week 5
+
+* In the final week team integrated whole code.
+* Team created presentation and assigned task and helped each other preparing there pitch
