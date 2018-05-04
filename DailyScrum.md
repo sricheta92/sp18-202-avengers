@@ -390,6 +390,10 @@ No.
 * What I will do today - Test; Intergration 
 * Blocker - None 
 
+#### Prateek
+* What I did yesterday -  Implemented design
+* What I will do today -  Design implementation and integration
+* Blocker - None 
 
 # Day 14 - 20th April
 
