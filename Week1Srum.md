@@ -579,7 +579,7 @@ No.
 # Day 28 - 3rd May
 
 #### Sricheta 
-* What I did yesterday -  I did uml diagram yesterday
+* What I did yesterday -  I did uml diagram yesterday.
 * What I will do today - I will do video recording
 * Blocker - No
 
