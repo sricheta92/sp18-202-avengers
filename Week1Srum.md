@@ -544,6 +544,12 @@ No.
 * What I will do today - Integration of level 1 and level 2
 * Blocker - No
 
+
+#### Kalikalyan
+* What I did yesterday -  Bug fixes
+* What I will do today - Bug fixes
+* Blocker - No
+
 # Day 26 - 1st May
 
 #### Sricheta 
@@ -567,6 +573,8 @@ No.
 * What I did yesterday -  Completed integration
 * What I will do today - Will do Uml design 
 * Blocker - No
+
+
 
 # Day 28 - 3rd May
 
