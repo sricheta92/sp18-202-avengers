@@ -612,6 +612,11 @@ No.
 * What I will do today - testing level one along with another peer
 * Blocker - No
 
+#### Prateek
+* What I did yesterday -  Integration testing of levels
+* What I will do today - testing level one along with another peer
+* Blocker - No
+
 
 # Day 23 - 28th April
 
@@ -630,6 +635,15 @@ No.
 * What I will do today - Bug fixes
 * Blocker - No
 
+#### Mangesh
+* What I did yesterday -  Bug fixes of level
+* What I will do today - Bug fixes
+* Blocker - No
+
+#### Prateek
+* What I did yesterday -  Code review
+* What I will do today - Bug fixes
+* Blocker - No
 
 # Day 24 - 29th April
 
@@ -646,6 +660,16 @@ No.
 #### Mangesh 
 * What I did yesterday -  Bug fixing from level 1
 * What I will do today - I will test level 2
+* Blocker - No
+
+#### Prateek 
+* What I did yesterday -  Bug fixing from level 2
+* What I will do today - I will test level 3
+* Blocker - No
+
+#### Kalikalyan 
+* What I did yesterday -  Bug fixing from level 3
+* What I will do today - I will test level 3
 * Blocker - No
 
 # Day 25 - 30th April
@@ -671,6 +695,11 @@ No.
 * What I will do today - Bug fixes
 * Blocker - No
 
+#### Prateek
+* What I did yesterday -  Bug fixes from code
+* What I will do today - Bug fixes
+* Blocker - No
+
 # Day 26 - 1st May
 
 #### Sricheta 
@@ -685,6 +714,16 @@ No.
 
 #### Huy Vo
 * What I did yesterday -  UML
+* What I will do today - UML 
+* Blocker - None 
+
+#### Kalikalyan 
+* What I did yesterday -  Integration
+* What I will do today - Integration between level 2 and level 3
+* Blocker - No
+
+#### Prateek
+* What I did yesterday -  UML and sequence diagram
 * What I will do today - UML 
 * Blocker - None 
 
