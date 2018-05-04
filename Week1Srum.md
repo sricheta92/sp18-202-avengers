@@ -331,6 +331,11 @@ No.
 * What I will do today - Designed structure of game
 * Blocker - No
 
+#### Huy Vo
+* What I did yesterday -  Learn Javascript.
+* What I will do today - Research on game Architecture.
+* Blocker - None 
+
 # Day 12 - 18th April
 
 #### Sricheta 
@@ -347,6 +352,11 @@ No.
 * What I did yesterday -  Learned about implementing state design pattern
 * What I will do today - Designed structure of game
 * Blocker - No
+
+#### Huy Vo
+* What I did yesterday -  Learn Javascript.
+* What I will do today - We will be using Tiled for all the UI.
+* Blocker - None 
 
 # Day 13 - 19th April
 
@@ -365,6 +375,10 @@ No.
 * What I will do today - Design structure of game
 * Blocker - No
 
+#### Huy Vo
+* What I did yesterday -  Code 
+* What I will do today - Test; Intergration 
+* Blocker - None 
 
 
 # Day 14 - 20th April
@@ -385,6 +399,11 @@ No.
 * What I will do today - phasor JS study
 * Blocker - No
 
+#### Huy Vo
+* What I did yesterday -  Code 
+* What I will do today - Refining code to be more readable.
+* Blocker - None 
+
 # Day 15 - 21th April
 
 #### Sricheta 
@@ -401,6 +420,12 @@ No.
 * What I did yesterday -  Coding practice in phasor JS
 * What I will do today - phasor JS study
 * Blocker - No
+
+
+#### Huy Vo
+* What I did yesterday -  Code 
+* What I will do today - Refining code to be more readable.
+* Blocker - None 
 
 # Day 16 - 22nd April
 
@@ -419,6 +444,11 @@ No.
 * What I will do today -  I will implement level 3 today
 * Blocker - No blocks yet
 
+#### Huy Vo
+* What I did yesterday -  Finalizing image selections
+* What I will do today - Finalizing image selections
+* Blocker - None 
+
 # Day 17 - 23rd April
 
 #### Sricheta 
@@ -436,7 +466,18 @@ No.
 * What I will do today - I will study proxy pattern today
 * Blocker - No blockers yet
 
+
+#### Huy Vo
+* What I did yesterday -  Finalizing image selections
+* What I will do today - Finalizing image selections
+* Blocker - None 
+
 # Day 18 - 24rd April
+
+#### Huy Vo
+* What I did yesterday -  Deciding on level complete condition
+* What I will do today - Finalizing image selections
+* Blocker - None 
 
 #### Sricheta 
 * What I did yesterday -  I did testing yesterday
@@ -456,6 +497,12 @@ No.
 
 # Day 20 - 25th April
 
+
+#### Huy Vo
+* What I did yesterday -  Testing the game
+* What I will do today - Testing the game
+* Blocker - None 
+
 #### Sricheta 
 * What I did yesterday -  I did bug fix today
 * What I will do today - I will do peer testing today
@@ -472,6 +519,11 @@ No.
 * Blocker - No
 
 # Day 21 - 26th April
+
+#### Huy Vo
+* What I did yesterday -  Testing the game
+* What I will do today - Testing the game
+* Blocker - None 
 
 #### Sricheta 
 * What I did yesterday -  I did peer testing yesterday
@@ -491,6 +543,11 @@ No.
 
 # Day 22 - 27th April
 
+#### Huy Vo
+* What I did yesterday -  Created enemy characters
+* What I will do today - Created enemy characters
+* Blocker - None 
+
 #### Sricheta 
 * What I did yesterday -  I did testing round 2 yesterday
 * What I will do today - I will do peer review today
@@ -509,6 +566,11 @@ No.
 
 # Day 23 - 28th April
 
+#### Huy Vo
+* What I did yesterday -  Created enemy characters
+* What I will do today - Level transitions
+* Blocker - None 
+
 #### Sricheta 
 * What I did yesterday -  Level 1 testing
 * What I will do today - I will try to resolve bug from level 1
@@ -522,6 +584,11 @@ No.
 
 # Day 24 - 29th April
 
+#### Huy Vo
+* What I did yesterday -  Created enemy characters
+* What I will do today - Level transitions
+* Blocker - None 
+
 #### Sricheta 
 * What I did yesterday -  I coded state pattern
 * What I will do today - I will do testing today
@@ -534,6 +601,12 @@ No.
 
 # Day 25 - 30th April
 
+
+#### Huy Vo
+* What I did yesterday -  Created enemy characters
+* What I will do today - Level transitions
+* Blocker - None 
+
 #### Sricheta 
 * What I did yesterday -  I did testing yesterday
 * What I will do today - I will do command pattern today
@@ -543,7 +616,6 @@ No.
 * What I did yesterday -  Bug fixing from level 1
 * What I will do today - Integration of level 1 and level 2
 * Blocker - No
-
 
 #### Kalikalyan
 * What I did yesterday -  Bug fixes
@@ -562,6 +634,11 @@ No.
 * What I will do today - Integration between level 2 and level 3
 * Blocker - No
 
+#### Huy Vo
+* What I did yesterday -  UML
+* What I will do today - UML 
+* Blocker - None 
+
 # Day 27 - 2nd May
 
 #### Sricheta 
@@ -574,9 +651,17 @@ No.
 * What I will do today - Will do Uml design 
 * Blocker - No
 
-
+#### Huy Vo
+* What I did yesterday -  UML
+* What I will do today - UML 
+* Blocker - None 
 
 # Day 28 - 3rd May
+
+#### Huy Vo
+* What I did yesterday -  UML
+* What I will do today - UML 
+* Blocker - None 
 
 #### Sricheta 
 * What I did yesterday -  I did uml diagram yesterday.
@@ -587,5 +672,4 @@ No.
 * What I did yesterday -  I did read me document
 * What I will do today - I will do presentation preparation
 * Blocker - No
-
-
+ 
