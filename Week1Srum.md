@@ -326,6 +326,11 @@ No.
 * What I will do today - Implemented proxy pattern
 * Blocker - No
 
+#### Kalikalyan
+* What I did yesterday -  Learned about implementing different pattern
+* What I will do today - Designed structure of game
+* Blocker - No
+
 # Day 12 - 18th April
 
 #### Sricheta 
@@ -338,6 +343,11 @@ No.
 * What I will do today - Integrated two levels
 * Blocker - No blocks yet
 
+#### Kalikalyan
+* What I did yesterday -  Learned about implementing state design pattern
+* What I will do today - Designed structure of game
+* Blocker - No
+
 # Day 13 - 19th April
 
 #### Sricheta 
@@ -349,6 +359,13 @@ No.
 * What I did yesterday -   Integrated game levels
 * What I will do today - Implement proxy pattern
 * Blocker - No
+
+#### Kalikalyan
+* What I did yesterday -  Learned about implementing state design pattern
+* What I will do today - Designed structure of game
+* Blocker - No
+
+
 
 # Day 14 - 20th April
 
