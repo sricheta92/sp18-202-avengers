@@ -248,6 +248,11 @@ No.
 * What I will do today - Starting to code levels
 * Blocker - No blocker as of now.
 
+#### Kalikalyan
+* What I did yesterday -  Read documentation.
+* What I will do today - Started coding in phaser js
+* Blocker - No blocker
+
 # Day 9 - 15th April
 
 #### Sricheta 
@@ -265,6 +270,18 @@ No.
 * What I will do today - Developing levels
 * Blocker - No
 
+#### Prateek Sharma
+* What I did yesterday -  Developed code in phaser js
+* What I will do today - Developing level 1
+* Blocker - No blocker issue
+
+#### Kalikalyan
+* What I did yesterday -  Basic coding started
+* What I will do today - Started with designing maps
+* Blocker - No
+
+
+
 # Day 10 - 16th April
 
 #### Sricheta 
@@ -280,6 +297,16 @@ No.
 #### Mangesh Tak
 * What I did yesterday -  Learened about proxy design pattern
 * What I will do today - Developing levels
+* Blocker - No
+
+#### Huy Vo
+* What I did yesterday -  Learened about composite pattern
+* What I will do today - Developed level 1
+* Blocker - Integration of levels
+
+#### Kalikalyan
+* What I did yesterday -  Learned about decorator pattern
+* What I will do today - Designed structure of game
 * Blocker - No
 
 # Day 11 - 17th April
@@ -306,11 +333,21 @@ No.
 * What I will do today - continue with level 3
 * Blocker - No
 
+#### Mangesh 
+* What I did yesterday -  Designed structure of levels
+* What I will do today - Integrated two levels
+* Blocker - No blocks yet
+
 # Day 13 - 19th April
 
 #### Sricheta 
 * What I did yesterday -   level 3 coding
 * What I will do today - I did peer testing today
+* Blocker - No
+
+#### Mangesh
+* What I did yesterday -   Integrated game levels
+* What I will do today - Implement proxy pattern
 * Blocker - No
 
 # Day 14 - 20th April
@@ -320,12 +357,22 @@ No.
 * What I will do today - I will fo unit testing tiday
 * Blocker - No
 
+#### Mangesh
+* What I did yesterday -  Performed integration of levels
+* What I will do today - Will do testing
+* Blocker - No
+
 # Day 15 - 21th April
 
 #### Sricheta 
 * What I did yesterday -  I did unit testing
 * What I will do today - I will do deployment
 * Blocker - No
+
+#### Mangesh 
+* What I did yesterday -  Performed level testing
+* What I will do today - Designed maps for level 3
+* Blocker - No issues
 
 # Day 16 - 22nd April
 
@@ -334,12 +381,22 @@ No.
 * What I will do today -  I will do coding today
 * Blocker - No
 
+#### Mangesh 
+* What I did yesterday -  I designed level 3
+* What I will do today -  I will implement level 3 today
+* Blocker - No blocks yet
+
 # Day 17 - 23rd April
 
 #### Sricheta 
 * What I did yesterday -  I did coding today
 * What I will do today - I will do testing today
 * Blocker - No
+
+#### Mangesh
+* What I did yesterday -  Level 3 implementation
+* What I will do today - I will study proxy pattern today
+* Blocker - No blockers yet
 
 # Day 18 - 24rd April
 
@@ -348,11 +405,21 @@ No.
 * What I will do today - I will fix bug today
 * Blocker - Bugs
 
+#### Mangesh
+* What I did yesterday -  Studied about proxy pattern
+* What I will do today - I will implement proxy pattern in level 3
+* Blocker - No blocks
+
 # Day 20 - 25th April
 
 #### Sricheta 
 * What I did yesterday -  I did bug fix today
 * What I will do today - I will do peer testing today
+* Blocker - No
+
+#### Mangesh
+* What I did yesterday -  Code implementation in Phaser Js
+* What I will do today - I will test level 3 today
 * Blocker - No
 
 # Day 21 - 26th April
@@ -362,6 +429,11 @@ No.
 * What I will do today - I will do testing today
 * Blocker - No
 
+#### Mangesh
+* What I did yesterday -  Testing for level 3
+* What I will do today - I will fix bugs in level 3
+* Blocker - No
+
 # Day 22 - 27th April
 
 #### Sricheta 
@@ -369,11 +441,16 @@ No.
 * What I will do today - I will do peer review today
 * Blocker - No
 
+#### Mangesh
+* What I did yesterday -  Fixed bug in level 3
+* What I will do today - I will strt testing level 1 designed by peer
+* Blocker - No
+
 # Day 23 - 28th April
 
 #### Sricheta 
-* What I did yesterday -  I did peer review yesterday
-* What I will do today - I will do coding
+* What I did yesterday -  Level 1 testing
+* What I will do today - I will try to resolve bug from level 1
 * Blocker - No
 
 
@@ -384,11 +461,21 @@ No.
 * What I will do today - I will do testing today
 * Blocker - No
 
+#### Mangesh 
+* What I did yesterday -  Bug fixing from level 1
+* What I will do today - I will test level 2
+* Blocker - No
+
 # Day 25 - 30th April
 
 #### Sricheta 
 * What I did yesterday -  I did testing yesterday
 * What I will do today - I will do command pattern today
+* Blocker - No
+
+#### Mangesh 
+* What I did yesterday -  Bug fixing from level 1
+* What I will do today - Integration of level 1 and level 2
 * Blocker - No
 
 # Day 26 - 1st May
@@ -398,11 +485,21 @@ No.
 * What I will do today - I will do code clean up today
 * Blocker - No
 
+#### Mangesh 
+* What I did yesterday -  Integration
+* What I will do today - Integration between level 2 and level 3
+* Blocker - No
+
 # Day 27 - 2nd May
 
 #### Sricheta 
 * What I did yesterday -  I did code clean up yesterday
 * What I will do today - I will do uml digram today
+* Blocker - No
+
+#### Mangesh 
+* What I did yesterday -  Completed integration
+* What I will do today - Will do Uml design 
 * Blocker - No
 
 # Day 28 - 3rd May
@@ -412,5 +509,9 @@ No.
 * What I will do today - I will do video recording
 * Blocker - No
 
+#### Mangesh 
+* What I did yesterday -  I did read me document
+* What I will do today - I will do presentation preparation
+* Blocker - No
 
 
