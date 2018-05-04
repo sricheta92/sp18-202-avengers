@@ -337,7 +337,80 @@ No.
 # Day 17 - 23rd April
 
 #### Sricheta 
-* What I did yesterday -  I did deployment today
+* What I did yesterday -  I did coding today
 * What I will do today - I will do testing today
 * Blocker - No
+
+# Day 18 - 24rd April
+
+#### Sricheta 
+* What I did yesterday -  I did testing yesterday
+* What I will do today - I will fix bug today
+* Blocker - Bugs
+
+# Day 20 - 25th April
+
+#### Sricheta 
+* What I did yesterday -  I did bug fix today
+* What I will do today - I will do peer testing today
+* Blocker - No
+
+# Day 21 - 26th April
+
+#### Sricheta 
+* What I did yesterday -  I did peer testing yesterday
+* What I will do today - I will do testing today
+* Blocker - No
+
+# Day 22 - 27th April
+
+#### Sricheta 
+* What I did yesterday -  I did testing round 2 yesterday
+* What I will do today - I will do peer review today
+* Blocker - No
+
+# Day 23 - 28th April
+
+#### Sricheta 
+* What I did yesterday -  I did peer review yesterday
+* What I will do today - I will do coding
+* Blocker - No
+
+
+# Day 24 - 29th April
+
+#### Sricheta 
+* What I did yesterday -  I coded state pattern
+* What I will do today - I will do testing today
+* Blocker - No
+
+# Day 25 - 30th April
+
+#### Sricheta 
+* What I did yesterday -  I did testing yesterday
+* What I will do today - I will do command pattern today
+* Blocker - No
+
+# Day 26 - 1st May
+
+#### Sricheta 
+* What I did yesterday -  I did testing yesterday
+* What I will do today - I will do code clean up today
+* Blocker - No
+
+# Day 27 - 2nd May
+
+#### Sricheta 
+* What I did yesterday -  I did code clean up yesterday
+* What I will do today - I will do uml digram today
+* Blocker - No
+
+# Day 28 - 3rd May
+
+#### Sricheta 
+* What I did yesterday -  I did uml diagram yesterday
+* What I will do today - I will do video recording
+* Blocker - No
+
+
 
