@@ -16,8 +16,8 @@ ScreenStateController.prototype.next = function (game) {
 	}
 
 	else if(this.currentState === "BeforeStart") {
-		game.state.start("Queen")
-		this.setState("Queen");
+		game.state.start("MainMenu")
+		this.setState("MainMenu");
 	}
 
 	else if(this.currentState === "FairyLevel") {
