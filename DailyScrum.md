@@ -170,6 +170,11 @@ No.
 * What I will do today - Apply design pattern. Write unit test cases.  
 * Blocker - No blocker as of now.
 
+#### Kalikalyan 
+* What I did yesterday - I worked on setup of levels of game.
+* What I will do today - Study of design patterns.  
+* Blocker - No blocker as of now.
+
 # Day 6 - 12th April
 
 #### Prateek 
@@ -356,6 +361,11 @@ No.
 #### Huy Vo
 * What I did yesterday -  Learn Javascript.
 * What I will do today - We will be using Tiled for all the UI.
+* Blocker - None 
+
+#### Prateek
+* What I did yesterday -  Studied JAVA and Javascript.
+* What I will do today - We will be using Phaser JS.
 * Blocker - None 
 
 # Day 13 - 19th April
