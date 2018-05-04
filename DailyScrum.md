@@ -363,6 +363,11 @@ No.
 * What I will do today - We will be using Tiled for all the UI.
 * Blocker - None 
 
+#### Prateek
+* What I did yesterday -  Studied JAVA and Javascript.
+* What I will do today - We will be using Phaser JS.
+* Blocker - None 
+
 # Day 13 - 19th April
 
 #### Sricheta 
