@@ -409,6 +409,11 @@ No.
 * What I will do today -  I will do coding today
 * Blocker - No
 
+#### Kalikalyan
+* What I did yesterday -  Coding practice in phasor JS
+* What I will do today - phasor JS study
+* Blocker - No
+
 #### Mangesh 
 * What I did yesterday -  I designed level 3
 * What I will do today -  I will implement level 3 today
@@ -419,6 +424,16 @@ No.
 #### Sricheta 
 * What I did yesterday -  I did coding today
 * What I will do today - I will do testing today
+* Blocker - No
+
+#### Kalikalyan
+* What I did yesterday -  Coding practice in phasor JS
+* What I will do today - phasor JS study
+* Blocker - No
+
+#### Kalikalyan
+* What I did yesterday -  Coding practice in phasor JS
+* What I will do today - phasor JS study
 * Blocker - No
 
 #### Mangesh
