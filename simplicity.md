@@ -16,3 +16,10 @@ Scope is important for us.
 *  We deployed the code on heroku. We comleted all the requirement of the hackathon project.
 * We started with test harness to make our code unbreakable.
 
+## Week 4 
+
+* The class diagram created this week helped in defining simple modules of the application. This helped in collaborative development. Each team member were assigned different modules which helped in faster development.
+
+## Week 5
+
+* Most of the time in this week was spent on refactoring the integrated code. The seperate modules implemented by each team member were then combined and refactored in a way so that it will be simple to maintain the code for future development. This keeps the application well maintainable.
