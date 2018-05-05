@@ -26,7 +26,7 @@ https://docs.google.com/spreadsheets/d/1INn3psFm7DUM9LX5RVhPztUvc68oLSk2xBHexmhG
 * Kalikalyan Dash: UI Wireframes
 * Sricheta: User Story
 
-## Personal Project Values Log:
+## Values Log:
 
 * Prateek: See the whole
 * Huy: Respect
