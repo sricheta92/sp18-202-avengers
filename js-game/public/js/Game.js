@@ -31,7 +31,7 @@ function GameProxy() {
 
 GameProxy.prototype.setAuthenticated = function (bool) {
     this.authenticated = bool;
-}
+};
 
 GameProxy.prototype.start = function (name) {
 
@@ -44,4 +44,4 @@ GameProxy.prototype.start = function (name) {
 	     this.name = name;
 	     this.theQuestion.askIt();
 	 }
-}
+};

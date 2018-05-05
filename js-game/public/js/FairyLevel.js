@@ -60,7 +60,7 @@ Game.FairyLevel.prototype = {
         }));
 
         this.compositeController.add(new Command(this, function (game) {
-            if(game.count == 5) {
+            if(game.count === 5) {
                 game.game.screenStateController.next(game.game);
             }
         }));

@@ -1,14 +1,14 @@
-/*
+/**
  * @author: Huy Vo 
  * @description: Command Design Pattern 
  */
-function Command(game, execute) {
+function Command(context, execute) {
     this.execute = execute;
-    this.game = game;
+    this.context = context;
 
 }
 
 
 Command.prototype.update = function () {
-    this.execute(this.game);
+    this.execute(this.context);
 };
