@@ -22,4 +22,4 @@ Scope is important for us.
 
 ## Week 5
 
-* Most of the time in this week was spent on refactoring the integrated code. The seperate modules implemented by each team member were then combined and refactored in a way so that it will be simple to maintain the code for future development. This keeps the application well maintainable.
+* Most of the time in this week was spent on refactoring the integrated code. The seperate modules implemented by each team member were then combined and refactored in a way so that it will be simple to maintain the code for future development. This keeps the application well maintainable. 
