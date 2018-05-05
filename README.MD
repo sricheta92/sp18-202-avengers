@@ -9,11 +9,14 @@
 * Prateek Sharma
 
 
-## link
+## Game link
 
 http://boringpeople.herokuapp.com/
 
 
+## Video Link
+
+https://www.youtube.com/watch?v=cs73-vodWps
 
 ## Burndown chart 
 
