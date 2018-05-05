@@ -70,7 +70,7 @@ IncorrectState.prototype.askIt = function () {
     var response = prompt(this.questionContext.getTheQuestion());
 
     if(response == null){
-        $.get( "/errr", function( data ) {
+        $.get( "/error", function( data ) {
             window.location.href = data;
         });
         window.location.href = "/error"
