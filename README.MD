@@ -20,16 +20,16 @@ https://docs.google.com/spreadsheets/d/1INn3psFm7DUM9LX5RVhPztUvc68oLSk2xBHexmhG
 
 ## Project Deliverables:
 
-Huy: Use Case Specification
-Prateek: Activity Diagram
-Mangesh: Design Sequence Diagram
-Kalikalyan Dash: UI Wireframes
-Sricheta: User Story
+* Huy: Use Case Specification
+* Prateek: Activity Diagram
+* Mangesh: Design Sequence Diagram
+* Kalikalyan Dash: UI Wireframes
+* Sricheta: User Story
 
 ## Personal Project Values Log:
 
-Prateek: See the whole
-Huy: Respect
-Kalikalyank: Courage
-Sricheta: Communication
-Mangesh: Simplicity
+* Prateek: See the whole
+* Huy: Respect
+* Kalikalyank: Courage
+* Sricheta: Communication
+* Mangesh: Simplicity
