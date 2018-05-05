@@ -744,6 +744,11 @@ No.
 * What I will do today - UML 
 * Blocker - None 
 
+#### Prateek 
+* What I did yesterday -  UML
+* What I will do today - Working on other deliverables
+* Blocker - No
+
 # Day 28 - 3rd May
 
 #### Huy Vo
@@ -759,5 +764,10 @@ No.
 #### Mangesh 
 * What I did yesterday -  I did read me document
 * What I will do today - I will do presentation preparation
+* Blocker - No
+
+#### Prateek 
+* What I did yesterday -  Worked deliverables
+* What I will do today - Prepare script for the presentation and create a checklist for submission
 * Blocker - No
  
