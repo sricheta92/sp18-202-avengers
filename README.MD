@@ -1,6 +1,6 @@
 # Welcome to Avengers 
 
-## Team members: 
+## Team members
 
 * Huy Vo
 * Sricheta Ruj
@@ -9,7 +9,7 @@
 * Prateek Sharma
 
 
-##link
+## link
 
 http://boringpeople.herokuapp.com/
 
@@ -20,7 +20,7 @@ http://boringpeople.herokuapp.com/
 https://docs.google.com/spreadsheets/d/1INn3psFm7DUM9LX5RVhPztUvc68oLSk2xBHexmhGCuY/edit#gid=333247243
 
 
-## Project Deliverables:
+## Project Deliverables
 
 * Huy: Use Case Specification
 * Prateek: Activity Diagram
@@ -28,7 +28,7 @@ https://docs.google.com/spreadsheets/d/1INn3psFm7DUM9LX5RVhPztUvc68oLSk2xBHexmhG
 * Kalikalyan Dash: UI Wireframes
 * Sricheta: User Story
 
-## Values Log:
+## Values Log
 
 * Prateek: See the whole
 * Huy: Respect
