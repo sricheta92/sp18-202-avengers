@@ -69,17 +69,15 @@ function IncorrectState(questionContext) {
 IncorrectState.prototype.askIt = function () {
     var response = prompt(this.questionContext.getTheQuestion());
 
-    if(response == null){
-        $.get( "/error", function( data ) {
-            window.location.href = data;
-        });
-        window.location.href = "/error"
+    if(response === null){
+        window.location.replace('/error');
+
         return
     }
 
     console.log("response = " + response);
 
-    if(response == this.questionContext.getTheSolution()){
+    if(response === this.questionContext.getTheSolution()){
         this.questionContext.setCurrentState("correctState");
     }else{
         this.questionContext.setCurrentState("incorrectState");

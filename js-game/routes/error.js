@@ -3,7 +3,8 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.send('404 error');
+	console.log("/error");
+  res.send('<h1> 404 error; Do not worry, our monkeys are fixing it! </h1> ');
 });
 
 module.exports = router;
